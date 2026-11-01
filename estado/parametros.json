@@ -1,7 +1,7 @@
 {
   "negocio": "Saldaña Digital: auditoría y automatización comercial (fijado; no lo elige el Comité)",
   "objetivo_lois": 5,
-  "fecha_limite_lois": "PENDIENTE: fecha (AAAA-MM-DD) en que las LOIs deben estar firmadas para presentar el expediente",
+  "fecha_limite_lois": "2026-12-01",
   "verticales": ["gestoria", "clinica", "bodega", "agroalimentario", "turismo_rural"],
   "corte_cuentas": 30,
   "corte_conversaciones": 5,

@@ -6,20 +6,20 @@ Este es tu único canal hacia el equipo. Escribe debajo de cada sección; la sig
 Responde debajo de cada una. Con las cuatro primeras basta para arrancar la Fase 1.
 
 1. **Fecha límite.** ¿En qué fecha tienen que estar firmadas las LOIs para presentar el expediente? (`fecha_limite_lois`, AAAA-MM-DD)
-   > 
+   > 1 de diciembre de 2026 (2026-12-01). Ya está en parametros.json.
 
 2. **Formato de LOI.** ¿Qué debe contener una LOI según quien lleva el expediente? ¿Sirve tal cual la C06 del Kit DFO?
-   > 
+   > Supongo que sí, la C06 del Kit DFO. Sin validar todavía con quien lleva el expediente.
 
 3. **Activos.** El equipo necesita el Kit DFO, el pipeline ACD, el diagnóstico de Contagal y la base de 165 bodegas. ¿Los subes a `activos/` o incluyes el conector de Google Drive en la tarea programada?
-   > 
+   > Están en Google Drive, carpeta SALDAÑA DIGITAL. La tarea programada tiene el conector de Drive.
 
 4. **Cuentas cálidas.** ¿Qué pasó después de lo último registrado?
    - Albamar: al 9 de octubre la llamada no se había celebrado.
    - Pulsa Asesores: se ofreció a ayudar con la carta de intención y le respondiste el 25 de septiembre.
    - Terra Brava: ¿es un contacto cálido o está quemada?
    - Contagal: ¿sigue cerrada?
-   > 
+   > De estas, solo sigue abierta Albamar. Pulsa Asesores, Terra Brava y Contagal quedan fuera.
 
 5. **Canales en marcha.**
    - ¿Contactaste a Valora, DPI Estrategia o EOSA para Re-acciona?
@@ -54,3 +54,5 @@ Todo lo que pasó con una cuenta y el equipo no puede ver: envíos hechos, respu
 
 ## Instrucciones del CEO
 Texto libre.
+
+2026-11-01: la fecha límite está a 30 días. En la primera sesión, procesa estas respuestas, pasa directamente a la Fase 1 y entrégame el Acta de Activación con su APR en esa misma sesión. La validación del formato de LOI con quien lleva el expediente es una OEF de esta semana.
