@@ -1,0 +1,42 @@
+{
+  "negocio": "Saldaña Digital: auditoría y automatización comercial (fijado; no lo elige el Comité)",
+  "objetivo_lois": 5,
+  "fecha_limite_lois": "PENDIENTE: fecha (AAAA-MM-DD) en que las LOIs deben estar firmadas para presentar el expediente",
+  "verticales": ["gestoria", "clinica", "bodega", "agroalimentario", "turismo_rural"],
+  "corte_cuentas": 30,
+  "corte_conversaciones": 5,
+  "corte_diagnosticos_pagados": 1,
+  "dias_minimos_entre_contactos": 5,
+  "dias_cuenta_fria": 21,
+  "moneda": "USD",
+  "capital_inicial": 3000,
+  "reserva_intocable": 600,
+  "tramo_1_max_comprometido": 1000,
+  "umbral_gasto_unitario": 100,
+  "umbral_gasto_semanal": 250,
+  "horas_ceo_max_semana": 6,
+  "coste_hora_ceo": 40,
+  "max_lideres": 6,
+  "max_agentes_total": 12,
+  "duracion_max_experimento_dias": 14,
+  "plazo_respuesta_ceo_horas": 48,
+  "zona_horaria": "America/Santo_Domingo",
+  "zona_horaria_mercado": "Europe/Madrid",
+  "mercado": "España: Galicia (gestorías, clínicas estéticas y dentales, bodegas, agroalimentario y turismo rural); clínicas estéticas de El Escorial y San Lorenzo de El Escorial mediante visitantes delegados",
+  "jurisdiccion": "PENDIENTE: confirmar con quien lleva el expediente cómo y desde qué figura se factura en España antes de la resolución (el CEO figura como persona física en el expediente; una LOI no requiere factura)",
+  "idiomas": ["es"],
+  "conflictos_excluidos": "El empleador del CEO (multinacional de logística y mensajería): su sector, sus clientes y cualquier servicio que pueda parecer competencia; no se nombra en material comercial. Los negocios paralelos del CEO quedan fuera de alcance (CLAUDE.md, sección 3).",
+  "capacidades_equipo": [
+    "búsqueda web y lectura de páginas públicas",
+    "lectura, escritura y ejecución de código en este repositorio",
+    "git sobre este repositorio",
+    "conectores de Google Drive o Microsoft 365 si el CEO los incluye en la tarea programada: solo lectura de activos y correo; nunca enviar, borrar ni compartir"
+  ],
+  "fuera_de_alcance_del_equipo": [
+    "envío de correos o mensajes a prospectos (los envía el CEO)",
+    "pagos y cobros",
+    "llamadas telefónicas y reuniones",
+    "firmas y trámites con identidad legal",
+    "presencia física"
+  ]
+}
