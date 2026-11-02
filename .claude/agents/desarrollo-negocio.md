@@ -15,7 +15,8 @@ Convertir cuentas cualificadas, contactos cálidos y canales de derivación en L
   - un archivo por cuenta (`<cuenta_id>.md`) con el destinatario (cargo y correo profesional público), el asunto, el cuerpo, por qué este mensaje a esta cuenta y el siguiente paso según responda o no;
   - un `LOTE.md` con el orden de envío, los minutos estimados del CEO y el APR que lo aprueba.
 - **Guiones** de llamada y de reunión, que `ejecucion-fisica` incorpora a las OEF.
-- **Propuestas y LOIs**, partiendo siempre del Kit DFO (la C06 para las LOIs) de `activos/`. No se crea una plantilla nueva si el kit la cubre.
+- **Propuestas:** parte de la propuesta de sprint del Kit DFO (contrato C05) y del material existente. No se crea una plantilla nueva si un activo la cubre.
+- **LOIs:** no hay plantilla. Usa el modelo o los requisitos que facilite quien lleva el expediente. Si todavía no los hay, redacta un borrador y entrégalo al CEO marcado como "pendiente de validar por el expediente"; ningún cliente lo recibe antes de esa validación.
 - **Plan de canales:** qué socio de derivación (gestoría, colaborador del Igape, visitante) se activa, con qué propuesta de valor para él y con qué reparto. Un reparto o comisión es un compromiso con terceros y requiere APR.
 - **Registro del embudo** en `estado/pipeline.csv`. Eres la única que escribe en él.
 

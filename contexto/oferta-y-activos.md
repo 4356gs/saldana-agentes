@@ -45,7 +45,9 @@ Las ubicaciones marcadas como PENDIENTE se preguntan en la Fase 0. La carpeta ra
 
 | Activo | Estado | Ubicación | Notas |
 |---|---|---|---|
-| Kit DFO (C02 → C04 → C05 → C06) | Listo, sin desplegar | PENDIENTE | La C06 genera las LOIs. Es el punto de partida obligado para cualquier LOI. |
+| Kit DFO v0.1 (contratos C01–C06) | Listo, sin desplegar | Drive: `Kit_Diagnostico_Friccion_Operativa_Bloque1_v0.1.zip` | Kit en código para diagnósticos trazables: C01 encargo, C02 entrada, C03 investigación, C04 análisis de fricciones, C05 definición del sprint, C06 control de calidad (12 comprobaciones y aprobación humana). Incluye un ejemplo ficticio de propuesta de sprint. **No contiene plantilla de LOI** (revisado el 1 nov). |
+| Plantilla de LOI | No existe | — | Pendiente del modelo de quien lleva el expediente (contradicción 8 de `contexto/saldana-digital.md`). |
+| Carta de Gallud ("CartaIntencion") | Firmada por un tercero en sep 2026 | Drive | Carta de referencia: declara expresamente que no hay interés en contratar ni compromiso. **No cuenta como LOI.** |
 | Expediente Cero | Listo, sin desplegar | Repo `4356gs/expediente-cero` (público) | Contenido y uso a confirmar con el CEO. |
 | Pipeline ACD | Completo, sin activación sistemática | PENDIENTE | Nueve indicadores, análisis con Claude e informe en Word. |
 | Diagnóstico externo con datos públicos | En uso | PENDIENTE | Google Places, web y PageSpeed, con cohorte sectorial y competidores anonimizados. Ejemplos: el diagnóstico de Contagal (PDF "Diagnostico_Presencia_Comercial_Vigo_Contagal") y Más Humanos ETT. |

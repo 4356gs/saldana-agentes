@@ -93,4 +93,4 @@ Deuda revisada el 1 de noviembre de 2026, por orden de gravedad:
 5. **Pulsa Asesores:** se desconoce qué pasó tras la respuesta del 25 sep.
 6. **Re-acciona y visitantes de El Escorial:** no consta si se activaron.
 7. **Facturación antes de la resolución:** cómo se cobraría hoy una ACD pagada en España (parámetro `jurisdiccion`).
-8. **Formato de LOI:** qué contenido exige quien lleva el expediente (el Kit DFO incluye una plantilla, la C06).
+8. **Formato de LOI:** no existe plantilla. La C06 del Kit DFO resultó ser el control de calidad del diagnóstico, no una LOI (revisado el 1 nov). Hay que obtener el modelo o los requisitos de quien lleva el expediente.

@@ -10,6 +10,7 @@ Responde debajo de cada una. Con las cuatro primeras basta para arrancar la Fase
 
 2. **Formato de LOI.** ¿Qué debe contener una LOI según quien lleva el expediente? ¿Sirve tal cual la C06 del Kit DFO?
    > Supongo que sí, la C06 del Kit DFO. Sin validar todavía con quien lleva el expediente.
+   > Corrección del 1 nov: revisado el kit en Drive, la C06 es el control de calidad del diagnóstico, no una LOI. No tenemos plantilla de LOI; voy a pedir el modelo a quien lleva el expediente.
 
 3. **Activos.** El equipo necesita el Kit DFO, el pipeline ACD, el diagnóstico de Contagal y la base de 165 bodegas. ¿Los subes a `activos/` o incluyes el conector de Google Drive en la tarea programada?
    > Están en Google Drive, carpeta SALDAÑA DIGITAL. La tarea programada tiene el conector de Drive.
