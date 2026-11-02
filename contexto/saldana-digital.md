@@ -38,6 +38,7 @@ Qué se ha probado:
 - **Gestorías, tandas 1 a 3** (31 ago – 3 sep): presentación (traslado a Galicia), hipótesis de fricción del vertical, cifra con supuesto declarado, diagnóstico gratuito con datos públicos sobre tres negocios de su ciudad y llamada de 20 minutos. Sin precio ni comisión. Un seguimiento el 8 sep (versión sin Verifactu ni caso Sofigal).
 - **Clínicas** (31 ago y 13 sep): ángulo de fricción entre la solicitud web y la cita confirmada.
 - **Campaña de "carta de intención" a bodegas de O Salnés** (19–21 sep): unas 30 cuentas, con el asunto "Carta de intención – digitalización operativa en [empresa]", segmentadas con el Informe ARDÁN Galicia 2026 del Igape. No consta ninguna respuesta.
+- **Octubre de 2026** (verificado en Outlook el 2 nov, pendiente de cargar en el pipeline con APR-002): unos 45 correos más. Incluyen preguntas concretas a unas 25 bodegas de Rías Baixas (6–9 oct, varias como segundo mensaje distinto), estudios de cocina, reformas y fotovoltaica (13–22 oct), cuentas de logística y distribución (Pereira, Disbegal, Seoane, CH Grupo3) y el ángulo de control de peso a 6 clínicas (30 oct). Ninguna cuenta fría ha respondido. Detalle en `salidas/material/conciliacion-correo-2026-11-02.md`.
 - **Aperturas fuera de vertical:** instaladoras, solar e industrial (7–23 sep), conserveras (4 sep) y una ETT de Zaragoza (diagnóstico externo preparado).
 
 Lo que sí ha funcionado:
@@ -53,12 +54,16 @@ Lo que sí ha funcionado:
 5. Bodegas pequeñas: el propietario tiene poco tiempo y no recibe visitas (Castro Brey).
 6. Calendario: el bajo volumen de respuestas de agosto y septiembre en bodegas se atribuye a la vendimia, no al mensaje [SUPUESTO].
 7. Errores operativos reales, que originan las reglas de higiene:
+   - Octubre: Santiago Roma (`no_contactar`) recibió un correo; Lagar de Pintos recibió tres mensajes distintos (sep, 6 oct y 27 oct); la propuesta a Grupo El Teide se envió a un dominio mal escrito y a un Gmail genérico.
    - Envíos duplicados (Maspymes, Cuidadent, IDEOdental).
    - Un correo con "[Nombre]" sin rellenar (Maspymes).
    - Dos mensajes distintos a la misma cuenta en 24 horas (Tomada de Castro).
    - Un contacto de la lista de quemados incluido en una tanda (Santiago Roma).
    - Un correo enviado a un buzón de pruebas en vez de a la bodega (Vía Romana, que nunca fue contactada).
    - Un seguimiento enviado a una cuenta ya cerrada (Contagal).
+
+8. Más volumen con mensajes mejores no abre conversaciones: unas 105 cuentas frías entre agosto y octubre, 0 conversaciones serias [ESTIMADO, 2 nov]. El canal de correo en frío queda cortado.
+9. La única respuesta cálida de octubre (Albamar pidió WhatsApp el 6 oct) se quedó sin contestar durante casi un mes mientras se enviaban correos fríos. Lo cálido va primero (cultura del Acta, principio 1).
 
 ## 6. Red, canales e instituciones
 
@@ -94,3 +99,10 @@ Deuda revisada el 1 de noviembre de 2026, por orden de gravedad:
 6. **Re-acciona y visitantes de El Escorial:** no consta si se activaron.
 7. **Facturación antes de la resolución:** cómo se cobraría hoy una ACD pagada en España (parámetro `jurisdiccion`).
 8. **Formato de LOI:** no existe plantilla. La C06 del Kit DFO resultó ser el control de calidad del diagnóstico, no una LOI (revisado el 1 nov). Hay que obtener el modelo o los requisitos de quien lleva el expediente.
+## 10. Estado de las contradicciones (2 nov)
+
+- Resueltas por el CEO (bandeja 2026-11-01): Terra Brava, Contagal y Pulsa Asesores quedan fuera (`descartada`). Albamar sigue abierta.
+- Albamar: el 6 oct Xurxo pidió seguir por WhatsApp (+34 660 292 750); sin respuesta nuestra hasta hoy [VERIFICADO: Outlook].
+- Siguen abiertas: precios (pregunta 6), Re-acciona y El Escorial (pregunta 5), facturación (`jurisdiccion`) y formato de LOI (OEF-001).
+- Nuevas: Grupo El Teide (origen del contacto y sector sin identificar) y Barrancolí (excluida de LOIs: no consta entidad española y tiene una factura pendiente).
+
