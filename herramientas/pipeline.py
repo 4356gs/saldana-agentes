@@ -233,6 +233,7 @@ def resumen(params):
         "cuentas": len(estados),
         "loi_firmadas": total["loi_firmada"],
         "objetivo_lois": objetivo,
+        "objetivo_ideal": params.get("objetivo_lois_ideal", objetivo),
         "fecha_limite_lois": limite,
         "dias_restantes": dias_restantes,
         "pagos": total["pago"],
@@ -274,7 +275,7 @@ def imprimir(r):
     limite = r["fecha_limite_lois"]
     resto = (f"{r['dias_restantes']} días hasta {limite}" if r["dias_restantes"] is not None
              else "fecha límite PENDIENTE")
-    print(f"  LOIs firmadas: {r['loi_firmadas']} / {r['objetivo_lois']}  ·  {resto}")
+    print(f"  LOIs firmadas: {r['loi_firmadas']} / {r['objetivo_lois']} (ideal {r['objetivo_ideal']})  ·  {resto}")
     print(f"  Pagos (diagnóstico o ACD): {r['pagos']}  ·  Cuentas en el pipeline: {r['cuentas']}")
     cab = ["vertical"] + [nombre for _, nombre in EMBUDO]
     anchos = [16] + [max(5, len(c)) for c in cab[1:]]

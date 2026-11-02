@@ -4,7 +4,7 @@ Carga inicial: 1 de noviembre de 2026, a partir del historial de trabajo del CEO
 
 ## 1. Qué es
 
-Consultoría de auditoría y automatización comercial. El CEO opera como persona física con el nombre comercial Saldaña Digital. Nació en República Dominicana; el foco actual es Galicia, donde Saldaña Digital es además la base del expediente de residencia por cuenta propia del CEO (RD 1155/2024). El plan de viabilidad está aprobado por UPTA.
+Consultoría de auditoría y automatización comercial. El CEO opera como persona física con el nombre comercial Saldaña Digital. Nació en República Dominicana; el foco actual es Galicia, donde Saldaña Digital es además la base del expediente de residencia por cuenta propia del CEO (RD 1155/2024). El plan de viabilidad está aprobado por UPTA. La norma no fija un número de LOIs; según el CEO, lo ideal son entre 3 y 5. El equipo trabaja con 3 como mínimo (`objetivo_lois`) y 5 como ideal (`objetivo_lois_ideal`), con fecha límite el 1 de diciembre de 2026.
 
 Tesis comercial: los negocios consolidados no pierden ventas por falta de demanda, sino entre el primer contacto y el cobro. Saldaña Digital mide esa fuga con datos públicos y solo implanta lo que tiene retorno calculable.
 
