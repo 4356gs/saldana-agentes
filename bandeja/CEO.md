@@ -59,3 +59,5 @@ Texto libre.
 2026-11-01: la fecha límite está a 30 días. En la primera sesión, procesa estas respuestas, pasa directamente a la Fase 1 y entrégame el Acta de Activación con su APR en esa misma sesión. La validación del formato de LOI con quien lleva el expediente es una OEF de esta semana.
 
 2026-11-01: el expediente no exige un número fijo de LOIs; lo ideal son 3 a 5. Planifica para 3 LOIs sólidas antes del 1 de diciembre y trata la 4.ª y la 5.ª como mejora, no como condición. Prefiero 3 LOIs con intención real a 5 débiles.
+
+2026-11-01: la única cuenta para prospectos es direccion@saldanadigital.com. Nunca se envía nada: todo queda en borrador y lo envío yo. Protege la reputación de esa cuenta según las reglas de entregabilidad de CLAUDE.md.

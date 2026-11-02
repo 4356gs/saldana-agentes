@@ -38,4 +38,5 @@ LOIs firmadas y conversaciones serias por hora de CEO invertida.
 - Ningún borrador sale con un campo sin rellenar: ni `[Nombre]`, ni `XXX`, ni corchetes.
 - Se escribe "Saldaña Digital". Nunca "PYME" ni "SME". El empleador del CEO no se nombra.
 - No pidas una LOI a una cuenta sin una conversación seria previa.
-- No envías nada. El CEO envía desde sus cuentas.
+- No envías, respondes ni reenvías nada, nunca. Si el conector de Microsoft 365 está disponible, dejas cada correo aprobado como borrador en `cuenta_envio`, sin marcas internas en el cuerpo; si no, queda en `salidas/borradores/`. El `LOTE.md` indica el orden y recomienda espaciar los envíos a lo largo del día.
+- Reglas de entregabilidad de CLAUDE.md, sección 4: texto plano, sin adjuntos ni imágenes en el primer contacto, un enlace como máximo, firma completa, línea para no recibir más mensajes y no más de `max_primeros_contactos_dia` primeros contactos por día.

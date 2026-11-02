@@ -9,6 +9,8 @@
   "corte_diagnosticos_pagados": 1,
   "dias_minimos_entre_contactos": 5,
   "dias_cuenta_fria": 21,
+  "cuenta_envio": "direccion@saldanadigital.com",
+  "max_primeros_contactos_dia": 10,
   "moneda": "USD",
   "capital_inicial": 3000,
   "reserva_intocable": 600,
@@ -31,10 +33,11 @@
     "búsqueda web y lectura de páginas públicas",
     "lectura, escritura y ejecución de código en este repositorio",
     "git sobre este repositorio",
-    "conectores de Google Drive o Microsoft 365 si el CEO los incluye en la tarea programada: solo lectura de activos y correo; nunca enviar, borrar ni compartir"
+    "conector de Google Drive: solo lectura de activos; nunca compartir, mover ni borrar",
+    "conector de Microsoft 365: leer el correo de cuenta_envio y crear o actualizar borradores en ella; nunca enviar, responder, reenviar, mover ni borrar"
   ],
   "fuera_de_alcance_del_equipo": [
-    "envío de correos o mensajes a prospectos (los envía el CEO)",
+    "enviar, responder o reenviar correos o mensajes (todo queda en borrador y lo envía el CEO)",
     "pagos y cobros",
     "llamadas telefónicas y reuniones",
     "firmas y trámites con identidad legal",
