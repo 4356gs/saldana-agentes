@@ -91,3 +91,23 @@ Además, el 6 de octubre el CEO volvió a escribir a Albamar (enlace de Meet y "
 - El canal de correo en frío ya superaba el criterio de corte con 63 cuentas. Con octubre pasa a **unas 105 cuentas contactadas, 0 conversaciones serias y 0 respuestas nuevas de cuentas frías** [ESTIMADO: 63 del pipeline + ~42 cuentas nuevas de esta tabla, sin deduplicar].
 - Octubre confirma la lección: más volumen con mensajes mejores no ha abierto ninguna conversación.
 - Todas las cuentas de la tabla quedan **bloqueadas para cualquier contacto** hasta que se carguen en el pipeline y cumplan `dias_minimos_entre_contactos`.
+
+## 5. Adenda 2026-11-06: seguimientos del 5 de noviembre
+
+Visto en Enviados de `cuenta_envio` el 5 nov entre las 21:07 y las 21:09 (hora de Santo Domingo; 02:07–02:09 del 6 nov en Madrid). No los preparó el equipo ni constan en la bandeja. Son respuestas en el mismo hilo al envío del 30 oct a las seis clínicas de la tabla anterior, con la misma propuesta: "le envío por aquí una conversación de ejemplo con el nombre de la clínica; le basta con contestar «sí»".
+
+| Fecha | Cuenta | Asunto | Comprobación |
+|---|---|---|---|
+| 05-nov | Gavín Dermatólogos | RE: Pacientes después del GLP-1 | [VERIFICADO: asunto en Enviados] |
+| 05-nov | ArteCorp | RE: Los cuatro meses del balón Elipse | [VERIFICADO: asunto en Enviados] |
+| 05-nov | Clínica Ártica | RE: Pacientes de sobrepeso entre consulta y cabina | [VERIFICADO: asunto en Enviados] |
+| 05-nov | Longevid | RE: Seguimiento entre revisiones en su Unidad de Obesidad | [VERIFICADO: destinatario longevid@longevid.es y cuerpo leídos] |
+| 05-nov | Clínica Dosío | RE: Su línea de dudas, también fuera de horario | [VERIFICADO: asunto en Enviados] |
+| 05-nov | Clínica Novoa (Vigo) | RE: Seguimiento del balón en sus tres sedes | [VERIFICADO: asunto en Enviados] |
+
+Higiene:
+- Cumple: 6 días desde el primer contacto (`dias_minimos_entre_contactos` = 5), mismo hilo y mismo tema, de modo que no es un segundo mensaje distinto.
+- **No cumple:** el seguimiento no lleva línea de baja ("lo dejo aquí" no la sustituye), y CLAUDE.md §4 la exige en cada correo. Además, no pasó por el flujo de borradores y salió a las 02:07 hora de Madrid. [VERIFICADO en Longevid; en las otras cinco es SUPUESTO por el resumen, que es idéntico.]
+- Sin adjuntos y con un enlace: VERIFICADO solo en Longevid.
+
+Se cargan como `seguimiento` junto con el resto de la tabla cuando el CEO apruebe APR-002. Ninguna de estas seis cuentas puede recibir otro mensaje antes del 2026-11-10, y conviene no enviarles un tercero: después de un seguimiento sin respuesta, la cuenta pasa a enfriarse.

@@ -1,12 +1,13 @@
 # ESTADO DEL EQUIPO
 
-Actualizado: 2026-11-02 (sesión 1)
+Actualizado: 2026-11-06 (sesión 5)
 Fase: 1 – Plan de Activación terminado. El Acta de Activación espera aprobación (APR-001).
 Negocio: Saldaña Digital, fijado.
 
 ## Números
-Salida de `herramientas/pipeline.py` y `herramientas/caja.py` del 2026-11-02:
-- **LOIs firmadas: 0 / 3** (ideal 5) · **29 días** hasta el 2026-12-01.
+Salida de `herramientas/pipeline.py` y `herramientas/caja.py` del 2026-11-06:
+- **LOIs firmadas: 0 / 3** (ideal 5) · **25 días** hasta el 2026-12-01.
+- 2026-11-05: el CEO envió 6 seguimientos, sin línea de baja, a las clínicas del 30 oct (adenda §5 de la conciliación). Se cargarán con APR-002. Esas cuentas no reciben nada antes del 10 nov.
 - Cuentas en el pipeline: 73. Contactadas: 64. Respondieron: 5. Conversaciones serias: 0. Pagos: 0.
 - Criterio de corte alcanzado en `email_frio`: 63 cuentas y 0 conversaciones. Además, faltan por cargar unos 45 envíos de octubre (APR-002).
 - Respuestas enfriándose: Albamar (pidió WhatsApp el 6 oct y no se le contestó) y Castro Brey.
@@ -55,7 +56,7 @@ Las 7 de `bandeja/CEO.md`. Crítica: la lista de red cálida, antes del 6 nov.
 ## Cuentas bloqueadas para contacto
 - Todas las de `salidas/material/conciliacion-correo-2026-11-02.md`, hasta APR-002.
 - Grupo El Teide, hasta saber de dónde viene el contacto.
-- Barrancolí, excluida de LOIs.
+- Barrancolí, excluida de LOIs. El motivo "factura pendiente" está en duda: dice que pagó en febrero (correo del 5 nov) y lo concilia el CEO.
 
 ## Disparadores de disolución
 Propuestos en el Acta §17; entran en vigor con APR-001:

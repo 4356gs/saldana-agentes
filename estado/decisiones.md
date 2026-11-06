@@ -47,3 +47,8 @@ Una entrada por decisión relevante, con el formato siguiente. En la revisión s
 - Disenso (quién y qué sostiene): oferta-entrega prefería fijar la arquitectura ya.
 - Resultado real:
 - Aprendizaje:
+
+## 2026-11-06 · Nota sobre Barrancolí (sin decisión nueva)
+- El 5 nov Barrancolí respondió al cobro del 28 oct: dice que la factura se pagó en febrero y adjunta un comprobante.
+- El motivo "factura pendiente" de la exclusión (Acta §13, OEF-003, comité 2026-11-02) queda en duda hasta que el CEO lo concilie. La exclusión se mantiene por los otros motivos: no hay entidad española verificada y el vertical está fuera de la lista.
+- Lo que se esperaba: que el CEO lo concilie y, si está pagada, que se disculpe con Barrancolí para no dañar la relación. Se revisa en la revisión semanal.

@@ -104,5 +104,5 @@ Deuda revisada el 1 de noviembre de 2026, por orden de gravedad:
 - Resueltas por el CEO (bandeja 2026-11-01): Terra Brava, Contagal y Pulsa Asesores quedan fuera (`descartada`). Albamar sigue abierta.
 - Albamar: el 6 oct Xurxo pidió seguir por WhatsApp (+34 660 292 750); sin respuesta nuestra hasta hoy [VERIFICADO: Outlook].
 - Siguen abiertas: precios (pregunta 6), Re-acciona y El Escorial (pregunta 5), facturación (`jurisdiccion`) y formato de LOI (OEF-001).
-- Nuevas: Grupo El Teide (origen del contacto y sector sin identificar) y Barrancolí (excluida de LOIs: no consta entidad española y tiene una factura pendiente).
+- Nuevas: Grupo El Teide (origen del contacto y sector sin identificar) y Barrancolí (excluida de LOIs: no consta entidad española). Factura: el 28 oct el CEO pidió el pago de "la factura que te enviamos en febrero, la cual continúa pendiente"; el 5 nov Barrancolí respondió que se pagó en febrero y adjuntó un comprobante [VERIFICADO: ambos correos en el buzón de `cuenta_envio`]. El motivo "factura pendiente" de la exclusión queda en duda hasta que el CEO lo concilie; la exclusión se mantiene por los otros dos motivos (sin entidad española verificada; consultoría fuera de `verticales`). Si se cobró antes del inicio del capital, no entra en `estado/libro.csv`.
 

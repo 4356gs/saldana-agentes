@@ -36,6 +36,11 @@ Responde debajo de cada una.
 7. **Horas y capital** (pendiente desde el 1 nov). ¿Siguen valiendo 6 h/semana, 40 USD/h y 3.000 USD de capital con 600 de reserva? El plan los usa al 100 %.
    > 
 
+8. **Seguimientos del 5 nov y Barrancolí** (nueva, 6 nov).
+   - Los 6 seguimientos a las clínicas salieron sin línea de baja. ¿Confirmas que se cargan con APR-002?
+   - ¿Has comprobado el comprobante de Barrancolí, que dice haber pagado en febrero?
+   > 
+
 ## Aprobaciones
 Una línea por decisión:
 - `APROBADO APR-###`
