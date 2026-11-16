@@ -1,18 +1,23 @@
 # ESTADO DEL EQUIPO
 
-Actualizado: 2026-11-06 (sesión 5)
-Fase: 1 – Plan de Activación terminado. El Acta de Activación espera aprobación (APR-001).
+Actualizado: 2026-11-16
+Fase: 1, con el Acta sin aprobar (APR-001) y una propuesta de pausa o disolución pendiente (APR-004, `actas/propuesta-disolucion.md`). **Gasto nuevo congelado** hasta que el CEO decida.
 Negocio: Saldaña Digital, fijado.
 
 ## Números
-Salida de `herramientas/pipeline.py` y `herramientas/caja.py` del 2026-11-06:
-- **LOIs firmadas: 0 / 3** (ideal 5) · **25 días** hasta el 2026-12-01.
-- 2026-11-05: el CEO envió 6 seguimientos, sin línea de baja, a las clínicas del 30 oct (adenda §5 de la conciliación). Se cargarán con APR-002. Esas cuentas no reciben nada antes del 10 nov.
-- Cuentas en el pipeline: 73. Contactadas: 64. Respondieron: 5. Conversaciones serias: 0. Pagos: 0.
-- Criterio de corte alcanzado en `email_frio`: 63 cuentas y 0 conversaciones. Además, faltan por cargar unos 45 envíos de octubre (APR-002).
-- Respuestas enfriándose: Albamar (pidió WhatsApp el 6 oct y no se le contestó) y Castro Brey.
-- Caja: 3.000 USD. Comprometido: 0. Disponible: 2.400. Margen del tramo 1: 1.000. Horas CEO esta semana: 0 / 6.
+Salida de `herramientas/pipeline.py` y `herramientas/caja.py` del 2026-11-16:
+- **LOIs firmadas: 0 / 3** (ideal 5) · **15 días** hasta el 2026-12-01.
+- Embudo:
+  - Cuentas en el pipeline: 73. Contactadas: 64. Respondieron: 5.
+  - Conversaciones serias: 0. Pagos: 0.
+  - Criterio de corte alcanzado en `email_frio`.
+  - Faltan por cargar unos 45 envíos de octubre (APR-002).
+- Albamar: pidió WhatsApp el 6 oct y lleva 41 días sin respuesta nuestra.
+- Caja: 3.000 USD.
+  - Comprometido: 0. Disponible: 2.400.
+  - Horas del CEO esta semana: 0 / 6.
 - Alerta: `jurisdiccion` PENDIENTE.
+- Sin respuesta del CEO desde el 2 nov.
 
 ## Organigrama vigente
 - Directora General (sesión principal)
@@ -46,6 +51,7 @@ Ninguno activo hasta APR-001. Previstos en el Acta (§12):
 - OEF-003 · Lista de red cálida · 0,75 h · límite 2026-11-06 · requiere APR-001
 
 ## Aprobaciones pendientes del CEO
+- APR-004 · Reactivar, pausar o disolver · solicitada 2026-11-16 · recomendación: B (pausa), o A si antes del 18 nov se aprueba APR-001 y hay al menos 4 cuentas de red
 - APR-001 · Acta de Activación "Cálido primero" · 0 USD, 6 h/sem · solicitada 2026-11-02 · recomendación: Sí
 - APR-002 · Conciliación de octubre y descarte de cuentas de logística · 0 USD · solicitada 2026-11-02 · recomendación: Sí
 - APR-003 · Lote S45: un WhatsApp a Albamar, con el número a elegir por el CEO · 0 USD · solicitada 2026-11-02 · recomendación: Sí
@@ -66,7 +72,9 @@ Propuestos en el Acta §17; entran en vigor con APR-001:
 - menos de 4 cuentas cálidas el 2026-11-06.
 
 ## Próxima acción
-Procesar la bandeja:
-- con APR-001 y la lista de red, el equipo prepara un diagnóstico y un borrador por cuenta (máximo 5 en S46);
-- con APR-002, `desarrollo-negocio` carga los envíos de octubre;
-- con la OEF-001 hecha, se redacta la LOI con el modelo validado.
+Esperar APR-004:
+- **A:** diagnóstico y borrador por cada cuenta de red, y carga de la conciliación.
+- **B:** reportes de 3 líneas hasta la fecha de reanudación.
+- **C:** cancelar las OEF y archivar.
+
+La OEF-001 sigue siendo necesaria en cualquier caso.

@@ -47,7 +47,13 @@ Una línea por decisión:
 - `RECHAZADO APR-### — motivo`
 - `CAMBIOS APR-### — qué cambiar`
 
-Pendientes (detalle en `reportes/2026-11-02.md`):
+Pendientes:
+- **APR-004 · NUEVA y prioritaria (16 nov)** · Reactivar (A), pausar (B) o disolver (C) el equipo. Detalle en `actas/propuesta-disolucion.md`.
+  - Recomendación: **B por defecto**. Pasa a A si antes del 18 nov apruebas APR-001 y nombras al menos 4 personas de tu red.
+  - En cualquier opción, haz la OEF-001 (30 min).
+  - Responde `APROBADO APR-004 — A`, `— B hasta <fecha>` o `— C`.
+
+Pendientes desde el 2 nov (detalle en `reportes/2026-11-02.md`):
 - **APR-001** · Acta de Activación "Cálido primero" (`actas/acta-activacion.md`). Coste directo 0 USD; 6 h/semana.
 - **APR-002** · Conciliación de octubre (`salidas/material/conciliacion-correo-2026-11-02.md`). Confirmas que esos envíos salieron y se cargan en el pipeline. Queda registrado como error de higiene:
   - Santiago Roma;

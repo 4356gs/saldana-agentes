@@ -52,3 +52,18 @@ Una entrada por decisión relevante, con el formato siguiente. En la revisión s
 - El 5 nov Barrancolí respondió al cobro del 28 oct: dice que la factura se pagó en febrero y adjunta un comprobante.
 - El motivo "factura pendiente" de la exclusión (Acta §13, OEF-003, comité 2026-11-02) queda en duda hasta que el CEO lo concilie. La exclusión se mantiene por los otros motivos: no hay entidad española verificada y el vertical está fuera de la lista.
 - Lo que se esperaba: que el CEO lo concilie y, si está pagada, que se disculpe con Barrancolí para no dañar la relación. Se revisa en la revisión semanal.
+
+## DEC-004 · 2026-11-16 · Propuesta de pausa o disolución (APR-004)
+- Decidió: Directora, con la revisión de riesgo.
+- Decisión:
+  - Vence el disparador 1 del Acta (0 conversaciones serias el 16 nov) sin que el Acta esté aprobada.
+  - Se redacta `actas/propuesta-disolucion.md`, se pide APR-004 y se congela el gasto nuevo.
+  - Recomendación: B (pausar) por defecto; A si antes del 18 nov se aprueba APR-001 y hay al menos 4 cuentas de red. La OEF-001 se hace en cualquier opción.
+- Alternativas descartadas y por qué:
+  - Seguir con reportes diarios vacíos, porque no cambia el resultado.
+  - Recomendar A sin condiciones, porque con 15 días empuja a acortar el ciclo hacia LOIs de complacencia (riesgo).
+  - Disolver (C), porque el equipo no consume capital.
+- Resultado esperado y plazo: respuesta del CEO antes del 18 nov.
+- Disenso (quién y qué sostiene): la Directora proponía A con un coste de 75 min; riesgo lo corrigió a 2,75 h y prefirió B. Se adopta B.
+- Resultado real:
+- Aprendizaje:
