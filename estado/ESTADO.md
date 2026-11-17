@@ -1,6 +1,6 @@
 # ESTADO DEL EQUIPO
 
-Actualizado: 2026-11-16
+Actualizado: 2026-11-17 (sin novedades; números de 2026-11-17: LOIs 0/3, 14 días)
 Fase: 1, con el Acta sin aprobar (APR-001) y una propuesta de pausa o disolución pendiente (APR-004, `actas/propuesta-disolucion.md`). **Gasto nuevo congelado** hasta que el CEO decida.
 Negocio: Saldaña Digital, fijado.
 
