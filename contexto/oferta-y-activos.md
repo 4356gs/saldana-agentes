@@ -27,8 +27,9 @@ Lo mantiene `oferta-entrega`. Los cambios de precio u oferta publicada requieren
 | Hipótesis del 6 oct | ACD 750–1.100 €; proyecto ancla 3.500–5.500 €; acompañamiento 600–900 €/mes (1.500–2.500 € como destino) | Decisión de activación del 6 oct |
 | Clínicas, ángulo de control de peso | 1.500 € de implantación + 290 €/mes | Decisión del 30 oct |
 | Canal gestorías | reparto del 40% | Dossier de gestorías |
+| Primera Respuesta EE. UU. (inmobiliarias) | 2.500 USD de implantación + 300 USD/mes | APR-005 (19 nov 2026). Es una hipótesis: si las tres primeras propuestas se rechazan por precio, se propone bajar la implantación a 1.500 USD con un APR. Referentes en `contexto/linea-eeuu-inmobiliarias.md` §2. |
 
-Hasta que el CEO fije una arquitectura única, ningún borrador menciona un precio que no esté en la web ("desde 900 €" para la ACD).
+Hasta que el CEO fije una arquitectura única, ningún borrador menciona un precio que no esté en la web ("desde 900 €" para la ACD). En la línea EE. UU. ningún correo menciona precio: el de la tabla se da en la llamada.
 
 ## 3. Reglas de oferta vigentes
 
@@ -38,6 +39,14 @@ Hasta que el CEO fije una arquitectura única, ningún borrador menciona un prec
 - Odoo es arquitectura de entrega, no producto. Se vende la corrección estructural que revele el diagnóstico.
 - Clínicas: solo Google Calendar, para mantener la replicabilidad 80/20. Si la agenda vive en otro sistema, el diagnóstico dice si compensa cambiarla.
 - El asistente de clínicas no diagnostica ni da consejo médico, y opera con un encargo de tratamiento firmado.
+- **Línea EE. UU.** El asistente para inmobiliarias:
+  - usa solo Google Calendar;
+  - se presenta como asistente virtual;
+  - cumple la regla de vivienda justa de CLAUDE.md §4;
+  - no da consejo legal, fiscal, migratorio ni financiero;
+  - no se ofrece con SMS en la versión inicial.
+
+  La garantía de devolución de la implantación no se ofrece hasta que el contrato esté validado.
 
 ## 4. Inventario de activos
 
@@ -58,7 +67,9 @@ Las ubicaciones marcadas como PENDIENTE se preguntan en la Fase 0. La carpeta ra
 | One-pager y Kit_Outreach_Gestorias_v3 | Desalineados | Drive: `Kit_Outreach_Gestorias_v3.docx` y `Saldana_OnePager_Gestorias.pdf` (verificados 2 nov) | Llevan 590 € y 236 € de comisión, la palabra "PYME" y la paleta antigua. No se adjuntan sin reescribir. |
 | Seguimiento reforzado de gestorías (caso Sofigal + Verifactu) | Listo, sin enviar | Outlook | El argumento de Verifactu quedó desfasado con el aplazamiento a 2028. |
 | Demo Pazo do Val | Primera implementación desde oct 2026 | VPS Hostinger | Odoo, PostgreSQL, n8n, Power BI y Nginx con Docker Compose. Se enseña en 20 minutos. |
-| Producto de clínicas ("Primera Respuesta") | Definido | PENDIENTE | WhatsApp Business API → n8n → Claude → Google Calendar. |
+| Producto de clínicas ("Primera Respuesta") | Diseñado, sin construir | — | WhatsApp Business API → n8n → Claude → Google Calendar. El 19 nov el CEO confirmó que el flujo no existe. Es la base de la línea EE. UU.: la OEF-004 construye una demo mínima para inmobiliarias, por excepción del CEO y con tope de 8 h. |
+| Base de conocimiento de la demo inmobiliaria | Lista, sin desplegar | `salidas/material/eeuu-demo-base-conocimiento.md` | Equipo ficticio "Casa Clara Realty", guion del vídeo y tres pruebas, una de ellas de vivienda justa. |
+| Plantillas de la línea EE. UU. | Listas | `salidas/material/eeuu-inmobiliarias-plantillas.md` | Tres correos en español y en inglés, qué hacer según la respuesta y guion de la llamada de 15 minutos. |
 | saldanadigital.com | En producción | Hostinger | Ver la deuda en `contexto/saldana-digital.md`, sección 8. |
 | Calendario corregido de outreach a bodegas | Documento | Drive, carpeta inv_bodegas | Su supuesto de visita presencial en octubre no se pudo cumplir. |
 | TRACKER_Outreach_Bodegas_ES | Hoja de seguimiento; no sustituye a `estado/pipeline.csv` | Drive, carpeta `inv_bodegas` (verificado 2 nov) | Contenido sin revisar; el pipeline es la única fuente del embudo. |

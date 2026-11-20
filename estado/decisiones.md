@@ -67,3 +67,42 @@ Una entrada por decisión relevante, con el formato siguiente. En la revisión s
 - Disenso (quién y qué sostiene): la Directora proponía A con un coste de 75 min; riesgo lo corrigió a 2,75 h y prefirió B. Se adopta B.
 - Resultado real:
 - Aprendizaje:
+
+## DEC-005 · 2026-11-19 · Pausa del track de LOIs y nueva línea EE. UU. (APR-004 y APR-005)
+- Decidió: CEO, desde el chat. Llega al repositorio por un PR que el propio CEO revisa; el merge equivale a su aprobación.
+- Decisión:
+  - El track de LOIs en España queda en pausa, sin fecha de reanudación (APR-004 en su opción B, solo para ese track). El equipo no se pausa.
+  - Nuevo mandato: vender Primera Respuesta a agentes y equipos inmobiliarios de EE. UU. con clientela hispanohablante, empezando por Florida y Texas, con el Acta `actas/acta-activacion-eeuu.md` (APR-005).
+  - El capital de 3.000 USD y las reglas de tramos no cambian.
+- Alternativas descartadas y por qué:
+  - Seguir con las LOIs: 0 conversaciones serias y el plazo del 1 dic sin margen (`actas/propuesta-disolucion.md`).
+  - Disolver el equipo: el capital está intacto y el equipo ya tiene montados el método y las herramientas.
+  - Otros sectores de EE. UU.:
+    - seguros: menos valor por cliente;
+    - med spas: datos de salud;
+    - contratistas: necesitan voz.
+- Resultado esperado y plazo [ESTIMADO: `herramientas/embudo_eeuu.py`, escenario base]:
+  - al menos 3 conversaciones serias el 2027-02-18 (base: 4,8);
+  - al menos 1 cliente pagando el 2027-04-19 (base: 1,26 esperados, un 72 % de probabilidad de tener al menos uno).
+- Disenso (quién y qué sostiene): pendiente. `riesgo` revisa el Acta en la primera sesión y su tesis contraria se anota aquí.
+- Resultado real:
+- Aprendizaje:
+
+## DEC-006 · 2026-11-20 · Excepción a "activos primero": demo mínima antes de vender
+- Decidió: CEO, desde el chat. Llega por el mismo PR que DEC-005.
+- Decisión:
+  - Primera Respuesta estaba diseñada, no construida: el CEO confirmó el 19 nov que el flujo de WhatsApp no existe.
+  - Se construye una demo mínima antes de tener una cuenta que la pida, con un tope de 8 h de construcción y 1 h de vídeo y con punto de parada (OEF-004).
+  - El primer envío pasa del 30 nov al 7 dic.
+  - Se cobra por PayPal (falta la parte fiscal, en `jurisdiccion`).
+  - La dirección de la firma, por defecto, es un buzón virtual en EE. UU. (OEF-005).
+- Alternativas descartadas y por qué:
+  - Vender primero y construir la demo cuando una cuenta pidiera verla. Era la recomendación de Claude y lo que pide CLAUDE.md §3. El CEO prefirió llegar al primer correo con una demo real.
+  - Maqueta rotulada como simulación: descartada por el CEO.
+- Resultado esperado y plazo [ESTIMADO: `herramientas/embudo_eeuu.py`, escenario base, ya con la comisión de PayPal]:
+  - demo y vídeo antes del 4 dic, en 9 h o menos;
+  - al menos 3 conversaciones serias el 2027-02-18 (base: 4,2);
+  - al menos 1 cliente pagando el 2027-04-19 (base: 1,17 esperados, un 69 % de probabilidad de tener al menos uno).
+- Disenso (quién y qué sostiene): Claude sostuvo vender primero. La excepción cuesta una semana de venta antes del control y abre el riesgo del patrón de construir y refinar; el tope de 8 h y el punto de parada lo acotan.
+- Resultado real:
+- Aprendizaje:
