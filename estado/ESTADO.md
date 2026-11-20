@@ -1,6 +1,6 @@
 # ESTADO DEL EQUIPO
 
-Actualizado: 2026-11-19 (sin novedades; números de 2026-11-19: LOIs 0/3, 12 días; venció el 18 nov la condición de la opción A de APR-004 sin respuesta)
+Actualizado: 2026-11-20 (sin novedades en la bandeja; LOIs 0/3, 11 días; Barrancolí pidió factura el 19 nov, pendiente de OEF-001 y del CEO)
 Fase: 1, con el Acta sin aprobar (APR-001) y una propuesta de pausa o disolución pendiente (APR-004, `actas/propuesta-disolucion.md`). **Gasto nuevo congelado** hasta que el CEO decida.
 Negocio: Saldaña Digital, fijado.
 
