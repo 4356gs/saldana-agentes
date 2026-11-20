@@ -12,7 +12,7 @@ La Directora mantiene este archivo. `oferta-entrega` mantiene la oferta y los pr
   - El canal `email_frio` alcanzó el criterio de corte [VERIFICADO: `pipeline.py`, 2026-11-19].
 - **Lo que cambia.**
   - **Mercado:** se cobra en USD [SUPUESTO: los precios aceptables son más altos que en Galicia; se valida con las primeras propuestas].
-  - **Oferta:** un producto concreto ya definido, Primera Respuesta, en vez de una auditoría.
+  - **Oferta:** un producto concreto, Primera Respuesta, en vez de una auditoría. Estaba diseñado pero sin construir [VERIFICADO: CEO, 19 nov]; su demo mínima se construye antes de vender (§6).
   - **Clientela:**
     - Los adultos hispanos son el grupo que más usa WhatsApp en EE. UU.: un 56 %, frente al 22 % de los adultos blancos y al 32 % del total [VERIFICADO: Pew Research Center 2025, citado por Sinch; confirmar en pewresearch.org].
     - En 2024 la cifra era del 54 % [VERIFICADO: Pew, citado por Latin Times].
@@ -118,18 +118,27 @@ Reglas del asistente:
 
 **Datos de prospectos.** Solo datos profesionales publicados por la propia cuenta.
 
-**Cobro y facturación.** PENDIENTE (`jurisdiccion`). Bloquea la primera propuesta con precio, no la prospección.
+**Cobro y facturación.**
+- **Medio de cobro:** PayPal [VERIFICADO: decisión del CEO, 19 nov].
+- PayPal permite a usuarios y comercios de República Dominicana retirar el saldo a cualquier banco del país, en pesos, con un coste de 100 DOP por retiro [VERIFICADO: Diario Libre, 2022].
+- La cuenta bancaria vinculada tiene que aceptar pesos [VERIFICADO: soporte de PayPal RD].
+- Comisión por recibir pagos comerciales internacionales: alrededor del 5,4 % más una tarifa fija [ESTIMADO: comparalatam.com, fuente secundaria; `finanzas-control` lo verifica en paypal.com/do antes de la primera propuesta].
+- Conversión a pesos: un 3–4 % sobre el tipo interbancario [ESTIMADO: comparalatam.com].
+- `herramientas/embudo_eeuu.py` descuenta el 5,4 %.
+- **PENDIENTE** (`jurisdiccion`): si el CEO factura como persona física o como sociedad, y cómo declara esos ingresos. Lo valida su contador. Bloquea la primera propuesta con precio, no la prospección.
 
 ## 6. Demo
 
-- **Activo:** el producto de clínicas, Primera Respuesta / Atlas (360dialog + n8n + Claude + Google Calendar). En `contexto/oferta-y-activos.md` §4 consta como "Definido" [VERIFICADO], pero su estado real es PENDIENTE (pregunta 9 de la bandeja).
-- **Qué cambia:**
-  - la base de conocimiento, que es de un equipo ficticio rotulado como demostración (`salidas/material/eeuu-demo-base-conocimiento.md`);
-  - el guion bilingüe;
-  - las reglas de vivienda justa.
-- **Entregable:** un vídeo de 60 a 90 segundos (OEF-004). Escena: llega una consulta en español a las 22:40, el asistente responde en segundos, hace cuatro preguntas, deja la cita en el calendario y avisa al agente.
-- **Regla:**
-  - como máximo una semana de trabajo;
+- **Activo:** el producto de clínicas, Primera Respuesta / Atlas (WhatsApp → n8n → Claude → Google Calendar), estaba diseñado pero no construido: el flujo de WhatsApp no existe [VERIFICADO: CEO, 19 nov].
+- **Decisión del CEO (20 nov):** construir una demo mínima antes de vender. Es una excepción a "activos primero"; Claude recomendaba vender primero y construir cuando una cuenta pidiera verla.
+- **Qué se construye** (OEF-004):
+  - número de prueba de WhatsApp Cloud API;
+  - n8n con un agente de IA (modelo de Anthropic, memoria por número y Google Calendar como herramienta);
+  - aviso al agente.
+- **Base de conocimiento:** la de un equipo ficticio rotulado como demostración (`salidas/material/eeuu-demo-base-conocimiento.md`), con su guion bilingüe y las reglas de vivienda justa.
+- **Entregable:** un vídeo de 60 a 90 segundos. Escena: llega una consulta en español a las 22:40, el asistente responde en segundos, hace cuatro preguntas, deja la cita en el calendario y avisa al agente.
+- **Reglas:**
+  - tope de 8 h de construcción y 1 h de vídeo, con punto de parada;
   - después no se toca hasta tener 10 conversaciones serias;
   - nunca se usa una marca o un agente reales.
 
@@ -137,14 +146,17 @@ Reglas del asistente:
 
 - **Fechas** (calendario y zonas horarias en `actas/acta-activacion-eeuu.md` §5):
   - Thanksgiving es el 26 de noviembre de 2026 [VERIFICADO: calendario], así que esa semana no se envía.
-  - La segunda quincena de diciembre tiene baja respuesta [SUPUESTO].
+  - La demo se construye antes de vender, así que el primer envío es el 7 de diciembre.
+  - La segunda quincena de diciembre tiene baja respuesta [SUPUESTO]. Los seguimientos que caen en fiestas se mueven al 4 de enero.
 - **Control del día 90 (2027-02-18):**
   - si hay al menos 3 conversaciones serias o un cliente pagando, se sigue;
   - si no, propuesta de cierre de la línea.
 - **Límite del día 150 (2027-04-19):** al menos un cliente pagando, o propuesta de cierre.
 - **Por qué 150 días y no 90:** el volumen está limitado por las reglas del equipo (10 primeros contactos al día y una sola cuenta de envío). Con ese volumen, el escenario base da [ESTIMADO: `herramientas/embudo_eeuu.py`, con Poisson sobre el valor esperado]:
-  - **al día 90:** 0,54 clientes esperados, un 42 % de probabilidad de tener al menos uno;
-  - **al día 150:** 1,26 clientes esperados, un 72 %.
+  - **al día 90:** 0,45 clientes esperados, un 36 % de probabilidad de tener al menos uno;
+  - **al día 150:** 1,17 clientes esperados, un 69 %.
+
+  Cifras recalculadas el 20 nov, con envíos desde el 7 dic.
 
   Cortar a los 90 días mataría la línea en más de la mitad de los escenarios base.
 
@@ -154,8 +166,10 @@ Reglas del asistente:
 |---|---|---|
 | Un correo en español con una observación concreta obtiene al menos un 5 % de respuestas | EXP-US-01 y EXP-US-02; corte de la línea con 60 cuentas maduras | Diciembre de 2026 |
 | Se paga 2.500 USD de implantación + 300 USD/mes | Las tres primeras propuestas | Enero de 2027 |
-| El flujo de clínicas sirve con otra base de conocimiento en una semana o menos | OEF-004 | S48 |
+| La demo mínima se construye en 8 h o menos | OEF-004, con punto de parada | S48–S49 |
+| La implantación para un cliente cabe en el plazo que se prometa, contando la verificación del número del cliente en Meta | `oferta-entrega`, antes de la primera propuesta | Antes de la primera propuesta |
 | El coste directo es de 70 USD/mes por cliente o menos | `finanzas-control`, con las facturas reales de la demo | Diciembre de 2026 |
+| La comisión de PayPal ronda el 5,4 % | `finanzas-control`, en paypal.com/do y con el primer cobro | Antes de la primera propuesta |
 | Florida responde distinto que Texas | EXP-US-01 frente a EXP-US-02 | Diciembre de 2026 |
 | El CEO puede cobrar en USD desde República Dominicana sin fricción | `jurisdiccion`, con su contador | Antes de la primera propuesta con precio |
 
@@ -170,3 +184,7 @@ Reglas del asistente:
 - Latin Times, uso de WhatsApp entre adultos hispanos (Pew, 2024): https://www.latintimes.com/latinos-dominate-social-media-leading-usage-tiktok-instagram-whatsapp-across-us-551034
 - Structurely, precios: https://us.fitgap.com/products/structurely y https://aiproductivity.ai/tools/structurely/
 - Coste de un ISA humano (fuente secundaria): https://realty-copilot.pages.dev/blog/real-estate-chatbot-for-agents/
+- Diario Libre, retiros de PayPal en moneda local en República Dominicana (2022): https://www.diariolibre.com/usa/actualidad/2022/10/20/paypal-habilita-retiros-en-moneda-local-para-rd/2115805
+- PayPal RD, retiros: https://www.paypal.com/do/webapps/mpp/business-support/withdrawals
+- Comisiones de PayPal en República Dominicana (fuente secundaria): https://comparalatam.com/do/card/paypal.html y https://comparalatam.com/do/transferencia/paypal.html
+- Buzones virtuales (CMRA) y formulario USPS 1583: https://beta4.ipostal1.com/mailbox-rental.php, https://businessanywhere.io/virtual-mailbox/, https://www.usestable.com/blog/usps-form-1583, https://www.californiaregisteredagent.com/cmra

@@ -7,7 +7,7 @@ Lo anterior al 2 nov está archivado en `bandeja/archivo/2026-11-02.md`.
 ## Preguntas del equipo
 Responde debajo de cada una.
 
-> **19 nov · nota del CEO:** las preguntas 1 a 6 quedan en pausa con el track de España (ver "Instrucciones del CEO"). No se recuerdan. Siguen abiertas la 7, la 8 y las nuevas de la línea EE. UU. (9 a 11).
+> **19 nov · nota del CEO:** las preguntas 1 a 6 quedan en pausa con el track de España (ver "Instrucciones del CEO"). No se recuerdan. Las preguntas 9 a 11 las respondí en el chat el 19 y el 20 nov (abajo). Siguen abiertas la 7, la 8 y la parte fiscal de la 10.
 
 1. **Red cálida (crítica, antes del 6 nov; la detalla la OEF-003).** Necesito entre 5 y 15 personas de tu red con empresa en España: empresa, web, persona, cargo, relación, último contacto y canal.
    - Exclusiones:
@@ -44,17 +44,18 @@ Responde debajo de cada una.
    > 
 
 9. **Primera Respuesta (línea EE. UU.; bloquea la OEF-004).** ¿El flujo de clínicas (WhatsApp Business API → n8n → Claude → Google Calendar, con 360dialog) funciona hoy de principio a fin? ¿Dónde está: qué servidor y qué cuenta de 360dialog? Si no existe, dilo: la OEF-004 tiene un plan B.
-   > 
+   > 19 nov (chat): no tengo el flujo de WhatsApp de Primera Respuesta.
+   > 20 nov (chat): construyo una demo mínima antes de vender. Es una excepción a "activos primero", con un tope de 8 h (OEF-004 reescrita).
 
 10. **Cobro en USD (línea EE. UU.).** Bloquea la primera propuesta con precio, no la prospección. ¿Cómo facturas y cobras en USD a un cliente de EE. UU. siendo residente en República Dominicana? Pregúntaselo a tu contador:
     - si facturas como persona física o como sociedad;
     - con qué medio de cobro.
 
     El equipo no asesora en esto.
-    > 
+    > 19 nov (chat): cobro por PayPal. Pendiente: preguntar a mi contador si facturo como persona física o como sociedad, y cómo declaro esos ingresos.
 
-11. **Dirección postal de la firma (ley CAN-SPAM).** Cada correo a EE. UU. debe llevar una dirección postal física válida. ¿Usas tu dirección de Santo Domingo o prefieres un buzón comercial en EE. UU.? El buzón cuesta hasta 60 USD del tramo 1.
-    > 
+11. **Dirección postal de la firma (ley CAN-SPAM).** Cada correo a EE. UU. debe llevar una dirección postal física válida. ¿Usas tu dirección de Santo Domingo o prefieres un buzón comercial en EE. UU.? El buzón cuesta hasta 80 USD del tramo 1 por 3 meses.
+    > 20 nov (chat): sin preferencia. Se aplica la opción por defecto: buzón virtual en EE. UU. (OEF-005, hasta 80 USD por 3 meses). Si prefiero mi dirección de Santo Domingo, lo digo aquí y se cancela la OEF-005.
 
 ## Aprobaciones
 Una línea por decisión:
@@ -89,7 +90,9 @@ Pendientes desde el 2 nov (detalle en `reportes/2026-11-02.md`):
 
 Abiertas: OEF-001 (formato de LOI, límite 6 nov), OEF-002 (Albamar, requiere APR-001 y APR-003) y OEF-003 (lista de red, requiere APR-001). Las tres quedan en pausa con el track de España desde el 19 nov.
 
-Nueva (19 nov): OEF-004 · demo de Primera Respuesta para inmobiliarias y vídeo de 60 segundos · 4 h · hasta 100 USD · límite 27 nov.
+Nuevas (20 nov):
+- OEF-004 · construir la demo mínima de Primera Respuesta para inmobiliarias y grabar el vídeo · 8 h como máximo, más 1 h de vídeo · hasta 100 USD · límite 4 dic.
+- OEF-005 · buzón virtual en EE. UU. para la firma · 1 h · hasta 80 USD · límite 4 dic.
 
 ## Eventos comerciales
 Todo lo que pasó con una cuenta y el equipo no puede ver: envíos hechos, respuestas, llamadas, reuniones, LOIs y pagos.
@@ -115,12 +118,16 @@ Texto libre.
      - `herramientas/embudo_eeuu.py`;
      - los roles de `inteligencia-comercial`, `desarrollo-negocio` y `riesgo`;
      - `contexto/oferta-y-activos.md`;
-     - la OEF-004 y el material de `salidas/material/eeuu-*`.
+     - las OEF-004 y OEF-005 y el material de `salidas/material/eeuu-*`.
    - Capital, tramos y horas no cambian.
 3. **Primera sesión:**
    - `riesgo` revisa el Acta, las plantillas y la base de conocimiento de la demo. Deja su dictamen en el reporte y en el Acta §14, sin bloquear el trabajo sin coste.
-   - `oferta-entrega` firma la comprobación de activos primero de la OEF-004.
-   - `ejecucion-fisica` revisa la OEF-004 y me la deja abierta.
+   - `oferta-entrega` anota la OEF-004 como excepción (punto 5); no la firma como comprobación superada.
+   - `ejecucion-fisica` revisa las OEF-004 y OEF-005 y me las deja abiertas.
    - `inteligencia-comercial` cualifica las primeras 30 cuentas de Florida.
-   - `desarrollo-negocio` prepara el lote 1 (EXP-US-01) con su APR, para enviar desde el 30 nov. La semana de Thanksgiving (23–27 nov) no se envía nada.
+   - `desarrollo-negocio` prepara el lote 1 (EXP-US-01) con su APR, para enviar desde el 7 dic, cuando estén la demo y el buzón. La semana de Thanksgiving (23–27 nov) no se envía nada.
 4. **Canal de respuesta:** puedo responder a esta bandeja desde el chat con Claude, que me la sube por PR. Cuenta igual que si edito este archivo.
+5. **Excepción a "activos primero" (20 nov).** El flujo de WhatsApp no existe y decido construir una demo mínima antes de vender.
+   - Tope de 8 h de construcción y 1 h de vídeo, con punto de parada (OEF-004).
+   - Cuando esté hecha, la demo no se toca hasta tener 10 conversaciones serias.
+   - No sirve de precedente: el resto sigue la regla de construir solo con demanda.

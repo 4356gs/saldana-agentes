@@ -87,3 +87,22 @@ Una entrada por decisión relevante, con el formato siguiente. En la revisión s
 - Disenso (quién y qué sostiene): pendiente. `riesgo` revisa el Acta en la primera sesión y su tesis contraria se anota aquí.
 - Resultado real:
 - Aprendizaje:
+
+## DEC-006 · 2026-11-20 · Excepción a "activos primero": demo mínima antes de vender
+- Decidió: CEO, desde el chat. Llega por el mismo PR que DEC-005.
+- Decisión:
+  - Primera Respuesta estaba diseñada, no construida: el CEO confirmó el 19 nov que el flujo de WhatsApp no existe.
+  - Se construye una demo mínima antes de tener una cuenta que la pida, con un tope de 8 h de construcción y 1 h de vídeo y con punto de parada (OEF-004).
+  - El primer envío pasa del 30 nov al 7 dic.
+  - Se cobra por PayPal (falta la parte fiscal, en `jurisdiccion`).
+  - La dirección de la firma, por defecto, es un buzón virtual en EE. UU. (OEF-005).
+- Alternativas descartadas y por qué:
+  - Vender primero y construir la demo cuando una cuenta pidiera verla. Era la recomendación de Claude y lo que pide CLAUDE.md §3. El CEO prefirió llegar al primer correo con una demo real.
+  - Maqueta rotulada como simulación: descartada por el CEO.
+- Resultado esperado y plazo [ESTIMADO: `herramientas/embudo_eeuu.py`, escenario base, ya con la comisión de PayPal]:
+  - demo y vídeo antes del 4 dic, en 9 h o menos;
+  - al menos 3 conversaciones serias el 2027-02-18 (base: 4,2);
+  - al menos 1 cliente pagando el 2027-04-19 (base: 1,17 esperados, un 69 % de probabilidad de tener al menos uno).
+- Disenso (quién y qué sostiene): Claude sostuvo vender primero. La excepción cuesta una semana de venta antes del control y abre el riesgo del patrón de construir y refinar; el tope de 8 h y el punto de parada lo acotan.
+- Resultado real:
+- Aprendizaje:

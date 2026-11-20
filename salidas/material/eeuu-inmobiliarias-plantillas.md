@@ -158,7 +158,8 @@ Lo usa el CEO. `ejecucion-fisica` lo incorpora a cada OEF de llamada con los dat
    - ¿Usan Google Calendar? ¿Y qué CRM?
 3. **Demo (4 min).** El vídeo o la demo en vivo. Al enseñarla, se dice que el asistente no pregunta ni comenta nada sobre quién vive en una zona (vivienda justa).
 4. **Cierre (3 min).**
-   - Si encaja, se da el precio de lista y se propone el siguiente paso: implantación en 14 días desde el sí, con una propuesta de una página en 48 horas.
+   - Si encaja, se da el precio de lista y se propone el siguiente paso: una propuesta de una página en 48 horas, con un plazo de implantación cerrado. Ese plazo lo fija antes `oferta-entrega`, contando la verificación del número del cliente en Meta. En la llamada no se promete un plazo.
+   - El cobro es por PayPal.
    - No se promete un número de citas ni de operaciones.
    - No se habla de garantía hasta que el contrato esté validado.
 

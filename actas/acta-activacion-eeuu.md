@@ -6,8 +6,15 @@ La redactó Claude en el chat del CEO, a petición suya, a partir del plan que e
 
 Contexto, fuentes y supuestos: `contexto/linea-eeuu-inmobiliarias.md`. Cálculos: `herramientas/embudo_eeuu.py`.
 
+**Actualización del 2026-11-20, con las respuestas del CEO a las preguntas 9 a 11:**
+- **Pregunta 9:** el flujo de WhatsApp de Primera Respuesta no existe. Estaba diseñado, no construido.
+  - El CEO decidió construir una demo mínima antes de vender. Es una excepción a "activos primero" (CLAUDE.md §3), con un tope de 8 h (OEF-004).
+  - Los envíos pasan del 30 nov al 7 dic.
+- **Pregunta 10:** se cobra por PayPal. Las cifras de §8 ya descuentan su comisión.
+- **Pregunta 11:** sin preferencia sobre la dirección de la firma. Se aplica por defecto un buzón virtual en EE. UU. (OEF-005).
+
 ## 1. Ángulo de activación elegido
-- **Qué se vende.** Primera Respuesta, el producto ya definido para clínicas (WhatsApp Business API → n8n → Claude → Google Calendar), con otra base de conocimiento.
+- **Qué se vende.** Primera Respuesta, el producto diseñado para clínicas (WhatsApp Business API → n8n → Claude → Google Calendar), con otra base de conocimiento. Estaba sin construir: la demo mínima se construye antes de vender (OEF-004).
 - **A quién.** Agentes y equipos inmobiliarios de Florida y Texas que ya atienden en español.
 - **Por qué compraría.**
   - Cada consulta tardía es una operación que se enfría [SUPUESTO].
@@ -25,8 +32,9 @@ Contexto, fuentes y supuestos: `contexto/linea-eeuu-inmobiliarias.md`. Cálculos
 ## 2. Activos que se usan y qué NO se construye
 | Pieza | Activo | Comprobación |
 |---|---|---|
-| Producto y demo | Primera Respuesta / Atlas (`contexto/oferta-y-activos.md` §4) | Solo se adapta la base de conocimiento (OEF-004, como máximo una semana). `oferta-entrega` firma la comprobación de "activos primero" en la primera sesión. |
-| Infraestructura | VPS de Hostinger con n8n, el mismo de Pazo do Val [SUPUESTO: confirmar] | Nada nuevo. |
+| Producto y demo | Primera Respuesta / Atlas (`contexto/oferta-y-activos.md` §4): diseñado, sin construir [VERIFICADO: CEO, 19 nov] | **Excepción del CEO (20 nov):** demo mínima antes de vender, con tope de 8 h de construcción y 1 h de vídeo, y punto de parada (OEF-004). Lo único nuevo es la base de conocimiento, que ya está escrita. `oferta-entrega` deja anotada la excepción, no la firma como comprobación superada. |
+| Infraestructura | La instancia de n8n que ya exista (VPS de Hostinger) o la prueba de n8n Cloud; número de prueba de WhatsApp Cloud API [SUPUESTO: confirmar] | Nada de pago salvo el uso de la API (tramo 1). |
+| Dirección postal (CAN-SPAM) | — | Buzón virtual en EE. UU., hasta 80 USD por 3 meses (OEF-005). |
 | Envío | `cuenta_envio`, borradores vía Microsoft 365 | Nada nuevo. |
 | Embudo y caja | `pipeline.py` (con el canal `email_eeuu` y el corte de la línea), `caja.py` | Se añadió `embudo_eeuu.py` para los cálculos de esta Acta, que el equipo exige hacer con código. |
 | Mensajes y llamada | `salidas/material/eeuu-inmobiliarias-plantillas.md` | Plantillas base; los borradores son por cuenta. |
@@ -59,17 +67,17 @@ Noviembre de 2027: 10 clientes activos y 3.000 USD/mes de recurrencia, unos 43.0
 - anuncios antes del tramo 2;
 - otros verticales;
 - integraciones antes del primer cobro;
-- tocar la demo después de su semana.
+- tocar la demo después de su tope de 8 h, hasta tener 10 conversaciones serias.
 
 **Plan semanal:**
 | Semana | Fechas | Hito | Métrica |
 |---|---|---|---|
-| S47 | 20–22 nov | El equipo cualifica las primeras 30 cuentas (Florida) y prepara el lote 1 | 30 fichas con señal en español y fricción [VERIFICADO + fuente] |
-| S48 | 23–27 nov | OEF-004: demo y vídeo. No se envía nada: Thanksgiving es el jueves 26 | Enlace al vídeo en la bandeja |
-| S49 | 30 nov–4 dic | EXP-US-01: 30 primeros contactos en Florida, como máximo 10 al día | 30 contactos confirmados |
-| S50 | 7–11 dic | Seguimientos +5. EXP-US-02: 30 cuentas de Texas | Respuestas y conversaciones |
-| S51 | 14–18 dic | Cierre de EXP-US-01 y seguimientos +12 | Veredicto de EXP-US-01 |
-| S52–S53 | 21 dic–1 ene | Baja respuesta [SUPUESTO]: solo llamadas agendadas y cualificación | — |
+| S47 | 20–22 nov | El equipo cualifica las primeras 30 cuentas (Florida) | 30 fichas con señal en español y fricción [VERIFICADO + fuente] |
+| S48 | 23–27 nov | OEF-004: construcción de la demo, hasta 6 h. No se envía nada: Thanksgiving es el jueves 26 | Avance de la demo |
+| S49 | 30 nov–4 dic | OEF-004: demo terminada y vídeo. OEF-005: buzón. Lote 1 listo, con su APR | Enlace al vídeo y dirección activa |
+| S50 | 7–11 dic | EXP-US-01: 30 primeros contactos en Florida, como máximo 10 al día | 30 contactos confirmados |
+| S51 | 14–18 dic | Seguimientos +5 de EXP-US-01. EXP-US-02: 30 cuentas de Texas | Respuestas y conversaciones |
+| S52–S53 | 21 dic–1 ene | Baja respuesta [SUPUESTO]. Los seguimientos +12 se mueven al 4 de enero; solo llamadas agendadas y cualificación | — |
 | S1–S6 | 4 ene–12 feb | 30 primeros contactos por semana, con el ángulo que ganó; propuestas a quien encaje | Conversaciones, propuestas y pagos |
 | S7 | 15–18 feb | **Control del día 90 (18 feb)** | Al menos 3 conversaciones serias o 1 cliente pagando |
 | S8–S16 | 22 feb–19 abr | Mismo ritmo | **Límite (19 abr): al menos 1 cliente pagando** |
@@ -92,49 +100,50 @@ Volumen: 30 primeros contactos por semana, por el tope de 10 al día y la cuenta
 
 Referencia propia: en España respondieron 5 de 64 cuentas (7,8 %) y ninguna llegó a conversación seria [VERIFICADO: `pipeline.py`].
 
-**Salida de `embudo_eeuu.py`** (valores esperados):
+**Salida de `embudo_eeuu.py`** (valores esperados). Recalculada el 20 nov con los envíos desde el 7 dic: construir la demo antes cuesta una semana de venta.
 
 | Momento | Contactos | Pesimista | Base | Optimista |
 |---|---|---|---|---|
-| Control del 18 feb (8 semanas útiles): conversaciones | 240 | 2,2 | 4,8 | 9,6 |
-| Día 90 (6 semanas útiles con ciclo de 4 semanas): clientes | 180 | 0,16 | 0,54 | 1,51 |
-| Límite del 19 abr (14 semanas útiles): clientes | 420 | 0,38 | 1,26 | 3,53 |
+| Control del 18 feb (7 semanas útiles): conversaciones | 210 | 1,9 | 4,2 | 8,4 |
+| Día 90 (5 semanas útiles con ciclo de 4 semanas): clientes | 150 | 0,13 | 0,45 | 1,26 |
+| Límite del 19 abr (13 semanas útiles): clientes | 390 | 0,35 | 1,17 | 3,28 |
 
 **Probabilidad de tener al menos un cliente** [ESTIMADO: Poisson sobre el valor esperado]:
-- al día 90: 15 % / 42 % / 78 %;
-- al día 150: 32 % / 72 % / 97 %.
+- al día 90: 12 % / 36 % / 72 %;
+- al día 150: 30 % / 69 % / 96 %.
 
 **Por eso:**
 - el control del día 90 mide conversaciones, que es lo que separa el escenario pesimista del base;
 - el cliente pagando se exige al día 150.
 
 ## 8. Economía unitaria
-Salida de `embudo_eeuu.py`, con 2.500 USD de implantación, 300 USD/mes y 6 meses medios de mantenimiento en el año. Costes [SUPUESTO]:
-- coste directo de 70 USD/mes por cliente;
-- 10 h de implantación;
-- 1 h/mes de mantenimiento;
-- 4 h/semana de venta;
-- la hora del CEO a 40 USD.
+Salida de `embudo_eeuu.py`, con 2.500 USD de implantación, 300 USD/mes y 6 meses medios de mantenimiento en el año. Costes:
+- coste directo de 70 USD/mes por cliente [SUPUESTO];
+- 10 h de implantación [SUPUESTO];
+- 1 h/mes de mantenimiento [SUPUESTO];
+- 4 h/semana de venta [SUPUESTO];
+- la hora del CEO a 40 USD;
+- comisión de PayPal del 5,4 % sobre lo cobrado [ESTIMADO: comparalatam.com, fuente secundaria; verificar en paypal.com/do]. No incluye la conversión a pesos (3–4 % [ESTIMADO]) ni los 100 DOP por retiro a un banco dominicano [VERIFICADO: Diario Libre, 2022].
 
 **Por cliente, primer año:**
-- ingreso 4.300 − directos 420 − horas del CEO 640 = **margen de contribución de 3.240 USD**;
-- mantenimiento: 190 USD/mes de margen.
+- ingreso neto de comisión 4.068 − directos 420 − horas del CEO 640 = **margen de contribución de 3.008 USD**;
+- mantenimiento: 174 USD/mes de margen.
 
 **Coste sombra de adquisición:**
 | Escenario | Cada cuántos contactos sale un cliente | Coste de adquisición | Margen tras adquisición |
 |---|---|---|---|
-| Base | 333 | 1.778 USD | 1.462 USD |
-| Pesimista | 1.111 | — | −2.686 USD |
-| Optimista | — | — | 2.605 USD |
+| Base | 333 | 1.778 USD | 1.230 USD |
+| Pesimista | 1.111 | — | −2.918 USD |
+| Optimista | — | — | 2.373 USD |
 
-**Con una implantación de 1.500 USD:** margen de contribución de 2.240 USD; en el base, 462 USD tras adquisición.
+**Con una implantación de 1.500 USD:** margen de contribución de 2.062 USD; en el base, 284 USD tras adquisición.
 
 **A 12 meses:**
-| Escenario | Clientes | Cobrado | Neto tras el coste sombra |
+| Escenario | Clientes | Cobrado (neto de comisión) | Neto tras el coste sombra |
 |---|---|---|---|
-| Base | 3,6 | 15.480 USD | 5.264 USD |
-| Pesimista | 1,1 | — | −2.901 USD |
-| Optimista | 10,1 | — | 26.259 USD |
+| Base | 3,6 | 14.644 USD | 4.428 USD |
+| Pesimista | 1,1 | — | −3.152 USD |
+| Optimista | 10,1 | — | 23.919 USD |
 
 `finanzas-control` sustituye los supuestos por costes reales cuando existan.
 
@@ -148,8 +157,9 @@ Salida de `embudo_eeuu.py`, con 2.500 USD de implantación, 300 USD/mes y 6 mese
 **El CEO** envía, llama, cierra y cobra.
 
 **Horas del CEO por semana** (máximo 6):
-- S48: 4 h de OEF-004.
-- Desde S49: hasta 4 h:
+- S48: hasta 6 h de OEF-004.
+- S49: el resto de OEF-004, como máximo 3 h, más 1 h de OEF-005 y 30 min para revisar el lote 1.
+- Desde S50: hasta 4 h:
   - envíos y seguimientos: unos 20 minutos al día;
   - llamadas: hasta 2 h;
   - bandeja y lote: 30 min.
@@ -160,7 +170,7 @@ Sin cambios: los seis líderes y ningún subequipo. Si la cualificación no lleg
 ## 11. Presupuesto por tramos
 | Tramo | Importe | Condición de liberación | Uso previsto |
 |---|---|---|---|
-| 1 | Hasta 1.000 USD (`tramo_1_max_comprometido`) | Aprobación de esta Acta | Demo: hasta 100 USD [ESTIMADO]. Revisión profesional del contrato de servicio y de la cláusula de datos: hasta 400 USD [SUPUESTO], solo cuando haya una propuesta aceptada (APR). Buzón postal comercial en EE. UU. para la firma: hasta 60 USD (opcional, si el CEO no usa su dirección de Santo Domingo). |
+| 1 | Hasta 1.000 USD (`tramo_1_max_comprometido`) | Aprobación de esta Acta | Demo (OEF-004): hasta 100 USD [ESTIMADO]. Buzón postal virtual en EE. UU. para la firma (OEF-005): hasta 80 USD por 3 meses [ESTIMADO: 9,99 USD/mes más 37 USD de notarización]. Revisión profesional del contrato de servicio y de la cláusula de datos: hasta 400 USD [SUPUESTO], solo cuando haya una propuesta aceptada (APR). Total previsto: hasta 580 USD. |
 | 2 | Hasta 1.000 USD más | Primer cobro | Prueba de anuncios en español: hasta 600 USD, 14 días, y solo si el correo ya produjo al menos 1 conversación seria (APR). Técnico de n8n para entregar y liberar horas del CEO: hasta 400 USD (APR). |
 | 3 | 400 USD | Tercer cliente o 900 USD/mes de recurrencia | Lo que el Comité proponga, con APR. |
 | Reserva | 600 USD | Solo con aprobación expresa del CEO | — |
@@ -174,11 +184,11 @@ Diferencias con el plan del chat del 19 nov, ya incorporadas:
 - **Hipótesis:** un correo con una observación concreta y una oferta en español obtiene interés de agentes que ya atienden en español.
 - **Cuentas:** las 30 primeras cualificadas en Florida.
 - **Presupuesto:** 0 USD y unas 2 h del CEO.
-- **Duración:** 14 días desde el primer envío (30 nov – 14 dic).
+- **Duración:** 14 días desde el primer envío (7–21 dic). El seguimiento +12 cae en fiestas y se mueve al 4 de enero, así que el veredicto se lee con esa salvedad.
 - **Éxito:** al menos 2 respuestas de interés (sin contar bajas ni respuestas automáticas) o al menos 1 conversación seria.
 - **Abandono:** 0 respuestas de interés. El siguiente lote cambia de ángulo, no solo de redacción.
 
-**EXP-US-02 · Texas, mismo mensaje.** 30 cuentas, del 7 al 21 de diciembre, con las mismas métricas. Sirve para comparar los dos estados.
+**EXP-US-02 · Texas, mismo mensaje.** 30 cuentas, del 14 al 28 de diciembre, con las mismas métricas y la misma salvedad por las fiestas. Sirve para comparar los dos estados.
 
 **EXP-US-03 · Ángulo alternativo**, solo si EXP-US-01 y EXP-US-02 suman menos de 2 respuestas de interés. Lo decide el Comité. Opciones:
 - en inglés, centrado en los leads de portales que llegan de noche;
@@ -198,7 +208,13 @@ Diferencias con el plan del chat del 19 nov, ya incorporadas:
 - **Construir integraciones con CRMs:** sería construir sin demanda.
 
 ## 14. Disensos del Comité
-Pendientes. El Acta no ha pasado por el Comité. La primera sesión registra aquí el dictamen de `riesgo` y la comprobación de `oferta-entrega`.
+El Acta no ha pasado por el Comité. La primera sesión registra aquí el dictamen de `riesgo` y la nota de `oferta-entrega`.
+
+Disenso ya registrado, del 20 nov. Claude, en el chat, recomendó vender primero y construir la demo cuando una cuenta pidiera verla, como manda "activos primero". El CEO eligió construir la demo antes. Coste estimado de su opción:
+- una semana menos de venta antes del control;
+- un día 90 con un 36 % de probabilidad de cliente en el escenario base, frente al 42 % anterior.
+
+Beneficio esperado: más credibilidad en el correo y menos riesgo de entrega.
 
 ## 15. Pre-mortem
 "Llegó el 19 de abril de 2027 sin clientes pagando. ¿Por qué?"
@@ -223,8 +239,16 @@ Pendientes. El Acta no ha pasado por el Comité. La primera sesión registra aqu
      - garantía de devolución de la implantación cuando el contrato esté validado;
      - regla de bajar la implantación a 1.500 USD tras tres rechazos por precio.
 
+4. **La demo se comió las semanas de venta**, el patrón documentado de construir y refinar.
+   - Mitigación:
+     - tope de 8 h y punto de parada en OEF-004;
+     - alcance cerrado;
+     - la demo no se toca hasta tener 10 conversaciones serias;
+     - si se llega al tope sin terminar, el Comité propone delegar o vender sin demo.
+
 Riesgos secundarios:
 - La demo no funciona: punto de parada en OEF-004.
+- La primera implantación tarda más de lo prometido: antes de la primera propuesta, `oferta-entrega` fija el plazo contando la verificación del número del cliente en Meta [SUPUESTO].
 - El cobro en USD no está resuelto: `jurisdiccion` bloquea la primera propuesta con precio y se pregunta ya.
 
 ## 16. Política de beneficios

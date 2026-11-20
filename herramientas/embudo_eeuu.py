@@ -34,6 +34,10 @@ HORAS_IMPLANTACION = 10     # horas del CEO por implantación
 HORAS_MANTENIMIENTO_MES = 1 # horas del CEO por cliente y mes
 HORAS_VENTA_SEMANA = 4      # horas del CEO por semana en envíos y llamadas
 MESES_MEDIOS_ACTIVO = 6     # meses de mantenimiento cobrados en el año, de media por cliente
+# Comisión de cobro por PayPal (medio elegido por el CEO el 2026-11-19): pagos comerciales
+# internacionales ~5,4 % + tarifa fija [ESTIMADO: comparalatam.com, fuente secundaria;
+# verificar en paypal.com/do]. No incluye la conversión a pesos (3–4 %) si se retira en DOP.
+COMISION_COBRO = 0.054
 
 
 def main():
@@ -47,6 +51,8 @@ def main():
                     help="semanas de envío en 12 meses (descontando festivos)")
     ap.add_argument("--implantacion", type=float, default=2500, help="USD por implantación")
     ap.add_argument("--mensual", type=float, default=300, help="USD por mes de mantenimiento")
+    ap.add_argument("--comision-cobro", type=float, default=COMISION_COBRO,
+                    help="fracción que se queda el medio de cobro (PayPal ~0.054)")
     a = ap.parse_args()
 
     h = P["coste_hora_ceo"]
@@ -55,7 +61,8 @@ def main():
           f"cliente(s) pagando antes de {linea.get('fecha_limite')}")
     print(f"Volumen: {a.por_semana} primeros contactos/semana · {a.semanas_utiles} semanas útiles "
           f"hasta la fecha límite · {a.semanas_anio} semanas en 12 meses  [SUPUESTO]")
-    print(f"Precio: {a.implantacion:,.0f} USD implantación + {a.mensual:,.0f} USD/mes  [SUPUESTO]\n")
+    print(f"Precio: {a.implantacion:,.0f} USD implantación + {a.mensual:,.0f} USD/mes  [SUPUESTO] · "
+          f"comisión de cobro {a.comision_cobro:.1%}  [ESTIMADO]\n")
 
     print("EMBUDO HASTA LA FECHA LÍMITE (valores esperados)")
     print(f"  {'escenario':10} {'contactos':>9} {'respuestas':>10} {'conversac.':>10} "
@@ -68,12 +75,12 @@ def main():
         cli = prop * g
         print(f"  {nombre:10} {n:9d} {resp:10.1f} {conv:10.1f} {prop:10.1f} {cli:8.2f}")
 
-    print("\nPROYECCIÓN A 12 MESES (valores esperados, ingresos cobrados)")
+    print("\nPROYECCIÓN A 12 MESES (valores esperados, ingresos cobrados netos de comisión de cobro)")
     horas_venta = HORAS_VENTA_SEMANA * a.semanas_anio
     for nombre, (r, c, p, g) in ESCENARIOS.items():
         n = a.por_semana * a.semanas_anio
         cli = n * r * c * p * g
-        ingresos = cli * (a.implantacion + a.mensual * MESES_MEDIOS_ACTIVO)
+        ingresos = cli * (a.implantacion + a.mensual * MESES_MEDIOS_ACTIVO) * (1 - a.comision_cobro)
         directos = cli * COSTE_DIRECTO_MES * MESES_MEDIOS_ACTIVO
         horas = horas_venta + cli * (HORAS_IMPLANTACION + HORAS_MANTENIMIENTO_MES * MESES_MEDIOS_ACTIVO)
         neto = ingresos - directos
@@ -82,13 +89,14 @@ def main():
               f"(sombra {horas * h:7,.0f}) · neto tras sombra {neto - horas * h:9,.0f}")
 
     print("\nECONOMÍA UNITARIA POR CLIENTE (primer año, sin coste de adquisición)")
-    ingreso = a.implantacion + a.mensual * MESES_MEDIOS_ACTIVO
+    ingreso = (a.implantacion + a.mensual * MESES_MEDIOS_ACTIVO) * (1 - a.comision_cobro)
     directo = COSTE_DIRECTO_MES * MESES_MEDIOS_ACTIVO
     sombra = (HORAS_IMPLANTACION + HORAS_MANTENIMIENTO_MES * MESES_MEDIOS_ACTIVO) * h
     mc = ingreso - directo - sombra
-    print(f"  Ingreso {ingreso:,.0f} − directos {directo:,.0f} − horas CEO {sombra:,.0f} "
+    print(f"  Ingreso neto de comisión {ingreso:,.0f} − directos {directo:,.0f} − horas CEO {sombra:,.0f} "
           f"= margen de contribución {mc:,.0f} USD")
-    print(f"  Margen mensual de mantenimiento: {a.mensual - COSTE_DIRECTO_MES - HORAS_MANTENIMIENTO_MES * h:,.0f} USD/mes")
+    margen_mes = a.mensual * (1 - a.comision_cobro) - COSTE_DIRECTO_MES - HORAS_MANTENIMIENTO_MES * h
+    print(f"  Margen mensual de mantenimiento: {margen_mes:,.0f} USD/mes")
     for nombre, (r, c, p, g) in ESCENARIOS.items():
         tasa = r * c * p * g
         contactos = 1 / tasa

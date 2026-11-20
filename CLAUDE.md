@@ -54,7 +54,7 @@ Si el contexto y lo que el CEO diga en la bandeja discrepan, gana la bandeja y s
 - Solo se construye con evidencia de demanda: una cuenta concreta que lo pide o lo necesita para firmar.
 - Refinar un activo que ya funciona no es progreso y no se reporta como tal.
 
-**Fuera de alcance**, salvo instrucción expresa del CEO en la bandeja: el track de República Dominicana, Pulso/EmpleosRD, Atendix/Farma, Ponte, PowerOps, el Sprint Verifactu y cualquier producto nuevo. Primera Respuesta no es un producto nuevo: es el producto de clínicas ya definido, con otra base de conocimiento.
+**Fuera de alcance**, salvo instrucción expresa del CEO en la bandeja: el track de República Dominicana, Pulso/EmpleosRD, Atendix/Farma, Ponte, PowerOps, el Sprint Verifactu y cualquier producto nuevo. Primera Respuesta no es un producto nuevo: es el producto de clínicas ya definido, con otra base de conocimiento. Estaba diseñado pero sin construir. Por excepción del CEO del 20 nov, su demo mínima se construye antes de vender, con un tope de 8 h (OEF-004). La excepción no sirve de precedente para nada más.
 
 ## 4. Recursos y restricciones
 

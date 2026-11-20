@@ -42,7 +42,7 @@
   "zona_horaria": "America/Santo_Domingo",
   "zona_horaria_mercado": "America/New_York",
   "mercado": "EE. UU. (línea activa desde 2026-11-19): agentes y equipos inmobiliarios con clientela hispanohablante, empezando por Florida y Texas. España (Galicia y El Escorial): en pausa con el track de LOIs.",
-  "jurisdiccion": "PENDIENTE: confirmar con el contador del CEO en República Dominicana cómo factura y cobra en USD a clientes de EE. UU. siendo residente dominicano (persona física o sociedad) y qué contrato de servicio usa. Bloquea la primera propuesta con precio, no la prospección. (Track España en pausa: la duda sobre cómo facturar en España sigue abierta para cuando se reactive.)",
+  "jurisdiccion": "PENDIENTE (parcial): el CEO cobrará por PayPal (19 nov). Falta confirmar con su contador en República Dominicana si factura como persona física o como sociedad, y cómo declara esos ingresos en USD de clientes de EE. UU. Bloquea la primera propuesta con precio, no la prospección. (Track España en pausa: la duda sobre cómo facturar en España sigue abierta para cuando se reactive.)",
   "idiomas": ["es", "en"],
   "conflictos_excluidos": "El empleador del CEO (multinacional de logística y mensajería): su sector, sus clientes y cualquier servicio que pueda parecer competencia; no se nombra en material comercial. Los negocios paralelos del CEO quedan fuera de alcance (CLAUDE.md, sección 3).",
   "capacidades_equipo": [
