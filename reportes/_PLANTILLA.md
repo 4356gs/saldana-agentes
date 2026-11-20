@@ -1,7 +1,7 @@
 # Reporte AAAA-MM-DD · Fase N
 
 ## 1. Estado
-- **LOIs firmadas** frente a `objetivo_lois`, y días restantes hasta `fecha_limite_lois` (de `pipeline.py`).
+- **Clientes pagando de la línea activa** frente a `linea_activa.objetivo_clientes_pagando`, con los días restantes hasta `linea_activa.control_fecha` y `linea_activa.fecha_limite` (de `pipeline.py`). Las LOIs solo se reportan si `lois_en_pausa` es `false`.
 - Conversaciones serias y pagos de la semana, y cuentas con respuesta enfriándose (de `pipeline.py`).
 - Caja, gastado, cobrado, comprometido y horas del CEO esta semana frente al máximo (de `caja.py`).
 

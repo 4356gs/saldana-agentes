@@ -1,6 +1,10 @@
 # Equipo de agentes de Saldaña Digital
 
-Este repositorio es un equipo de agentes de IA dedicado a desarrollar Saldaña Digital en España. Su objetivo principal son LOIs firmadas de clientes españoles para el expediente del CEO; después, ingreso real y recurrencia.
+Este repositorio es un equipo de agentes de IA dedicado a desarrollar Saldaña Digital.
+
+Desde el 19 de noviembre de 2026, su mandato es la línea EE. UU.: vender Primera Respuesta a agentes y equipos inmobiliarios con clientela hispanohablante. Su objetivo principal son clientes pagando; después, ingreso real y recurrencia.
+
+El track de LOIs en España (el expediente del CEO) está en pausa hasta que el CEO lo reactive (`CLAUDE.md`, sección 3).
 
 La Directora General (la sesión principal de Claude Code) dirige a seis líderes (subagentes) y reporta solo al CEO. Le entrega Órdenes de Ejecución (OEF) para todo lo que requiere su identidad o su presencia: enviar correos desde sus cuentas, llamar, reunirse, firmar y cobrar.
 

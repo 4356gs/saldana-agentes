@@ -17,7 +17,9 @@ Columnas:
   cuenta          nombre legible
   vertical        uno de parametros.verticales, u "otro"
   municipio       texto libre (puede ir vacío)
-  canal           email_frio | derivacion | institucional | presencial | red | web | desconocido
+  canal           email_frio | email_eeuu | derivacion | institucional | presencial | red | web | desconocido
+                  (email_eeuu = correo de la línea EE. UU.; separado para que su criterio de corte
+                  no se mezcle con el email_frio de España)
   evento          ver EVENTOS
   detalle         texto libre, sin datos de salud
   experimento     EXP-## si aplica
@@ -56,7 +58,7 @@ TOQUES = {"contacto", "seguimiento"}
 BLOQUEOS = {"descartada", "no_contactar"}
 CONFIRMADOS_POR_CEO = {"contacto", "seguimiento", "respuesta", "conversacion",
                        "loi_firmada", "pago"}
-CANALES = {"email_frio", "derivacion", "institucional", "presencial", "red", "web",
+CANALES = {"email_frio", "email_eeuu", "derivacion", "institucional", "presencial", "red", "web",
            "desconocido"}
 CARGA_INICIAL = "carga-inicial"
 EMBUDO = [("cualificada", "cualificadas"), ("contactada", "contactadas"),
@@ -138,6 +140,7 @@ def estado_cuenta(eventos, params, dia):
                       eventos[0]["canal"].strip()),
         "hitos": set(tipos) | ({"contactada"} if toques else set()),
         "bloqueo": bloqueo,
+        "primer_toque": min(toques) if toques else None,
         "ultimo_toque": max(toques) if toques else None,
         "ultimo_evento": ultimo,
         "dias_sin_movimiento": (dia - ultimo_relevante).days,
@@ -190,17 +193,77 @@ def resumen(params):
             dias_restantes = None
 
     alertas = []
-    if es_pendiente(limite):
+    lois_en_pausa = bool(params.get("lois_en_pausa"))
+    if lois_en_pausa:
+        pass  # track de LOIs en pausa por decisión del CEO: sin alertas de su fecha
+    elif es_pendiente(limite):
         alertas.append("fecha_limite_lois pendiente: sin ella no se puede planificar hacia atrás.")
     elif dias_restantes is not None and dias_restantes < 0:
         alertas.append("fecha_limite_lois ya pasó.")
+
+    linea = None
+    cfg = params.get("linea_activa") or {}
+    if cfg.get("vertical"):
+        c = conteo(por_vertical.get(cfg["vertical"], []))
+        dias_linea = None
+        if not es_pendiente(cfg.get("fecha_limite")):
+            try:
+                dias_linea = (a_fecha(cfg["fecha_limite"]) - dia).days
+            except ValueError:
+                dias_linea = None
+        linea = {"id": cfg.get("id", cfg["vertical"]), "vertical": cfg["vertical"],
+                 "clientes_pagando": c["pago"],
+                 "objetivo_clientes_pagando": cfg.get("objetivo_clientes_pagando"),
+                 "fecha_limite": cfg.get("fecha_limite"), "dias_restantes": dias_linea,
+                 "cualificadas": c["cualificada"], "contactadas": c["contactada"],
+                 "respondieron": c["respuesta"], "conversaciones": c["conversacion"],
+                 "propuestas": c["propuesta"]}
+        objetivo_linea = cfg.get("objetivo_clientes_pagando") or 0
+        if dias_linea is not None and dias_linea < 0 and c["pago"] < objetivo_linea:
+            alertas.append(f"Línea {linea['id']}: pasó {cfg['fecha_limite']} con {c['pago']} "
+                           f"clientes pagando (objetivo {objetivo_linea}). Disparador del Acta.")
+        control = cfg.get("control_fecha")
+        minimo_conv = cfg.get("control_conversaciones_minimas") or 0
+        if control and not es_pendiente(control):
+            try:
+                pasado = (dia - a_fecha(control)).days > 0
+            except ValueError:
+                pasado = False
+            linea["control_fecha"] = control
+            linea["control_conversaciones_minimas"] = minimo_conv
+            if pasado and c["conversacion"] < minimo_conv and c["pago"] < objetivo_linea:
+                alertas.append(f"Línea {linea['id']}: en el control del {control} hay "
+                               f"{c['conversacion']} conversaciones serias (mínimo {minimo_conv}) "
+                               "y ningún cliente pagando. Disparador del Acta.")
 
     corte_c = int(params.get("corte_cuentas") or 0)
     corte_conv = int(params.get("corte_conversaciones") or 0)
     corte_pag = int(params.get("corte_diagnosticos_pagados") or 0)
     canales = {}
+    cfg_linea = params.get("linea_activa") or {}
     for canal, grupo in sorted(por_canal.items()):
         c = conteo(grupo)
+        if canal == cfg_linea.get("canal_correo") and cfg_linea.get("corte_cuentas_maduras"):
+            # Corte propio de la línea activa (Acta EE. UU.): solo cuentan las cuentas cuyo
+            # primer contacto tiene al menos ventana_madurez_dias, porque las respuestas tardan.
+            ventana = int(cfg_linea.get("ventana_madurez_dias") or 0)
+            maduras = [st for st in grupo if st["primer_toque"] is not None
+                       and (dia - st["primer_toque"]).days >= ventana]
+            m = conteo(maduras)
+            alcanzado = (len(maduras) >= int(cfg_linea["corte_cuentas_maduras"])
+                         and m["respuesta"] < int(cfg_linea.get("corte_respuestas_minimas") or 0)
+                         and m["conversacion"] < int(cfg_linea.get("corte_conversaciones_minimas") or 0)
+                         and m["pago"] < 1)
+            canales[canal] = {"contactadas": c["contactada"], "maduras": len(maduras),
+                              "respondieron_maduras": m["respuesta"],
+                              "conversaciones": c["conversacion"], "pagos": c["pago"],
+                              "loi_firmadas": c["loi_firmada"], "corte_alcanzado": bool(alcanzado)}
+            if alcanzado:
+                alertas.append(f"Criterio de corte de la línea alcanzado en {canal}: {len(maduras)} "
+                               f"cuentas con más de {ventana} días desde el primer contacto, "
+                               f"{m['respuesta']} respuestas y {m['conversacion']} conversaciones. "
+                               "No subir volumen; cambiar ángulo o mensaje (Acta EE. UU., §12).")
+            continue
         alcanzado = (corte_c and c["contactada"] >= corte_c
                      and c["conversacion"] < corte_conv and c["pago"] < corte_pag)
         canales[canal] = {"contactadas": c["contactada"], "conversaciones": c["conversacion"],
@@ -236,6 +299,8 @@ def resumen(params):
         "objetivo_ideal": params.get("objetivo_lois_ideal", objetivo),
         "fecha_limite_lois": limite,
         "dias_restantes": dias_restantes,
+        "lois_en_pausa": lois_en_pausa,
+        "linea_activa": linea,
         "pagos": total["pago"],
         "total": total,
         "por_vertical": {v: conteo(g) for v, g in sorted(por_vertical.items())},
@@ -272,10 +337,22 @@ def infracciones(filas, cuentas, params):
 
 def imprimir(r):
     print(f"EMBUDO — {r['fecha']}")
+    la = r.get("linea_activa")
+    if la:
+        plazo = (f"{la['dias_restantes']} días hasta {la['fecha_limite']}"
+                 if la["dias_restantes"] is not None else "fecha límite PENDIENTE")
+        print(f"  LÍNEA ACTIVA {la['id']}: clientes pagando {la['clientes_pagando']} / "
+              f"{la['objetivo_clientes_pagando']}  ·  {plazo}")
+        print(f"    cualificadas {la['cualificadas']} · contactadas {la['contactadas']} · "
+              f"respondieron {la['respondieron']} · conversaciones {la['conversaciones']} · "
+              f"propuestas {la['propuestas']}")
     limite = r["fecha_limite_lois"]
     resto = (f"{r['dias_restantes']} días hasta {limite}" if r["dias_restantes"] is not None
              else "fecha límite PENDIENTE")
-    print(f"  LOIs firmadas: {r['loi_firmadas']} / {r['objetivo_lois']} (ideal {r['objetivo_ideal']})  ·  {resto}")
+    if r.get("lois_en_pausa"):
+        print(f"  LOIs (track España EN PAUSA): {r['loi_firmadas']} / {r['objetivo_lois']}")
+    else:
+        print(f"  LOIs firmadas: {r['loi_firmadas']} / {r['objetivo_lois']} (ideal {r['objetivo_ideal']})  ·  {resto}")
     print(f"  Pagos (diagnóstico o ACD): {r['pagos']}  ·  Cuentas en el pipeline: {r['cuentas']}")
     cab = ["vertical"] + [nombre for _, nombre in EMBUDO]
     anchos = [16] + [max(5, len(c)) for c in cab[1:]]
@@ -288,7 +365,9 @@ def imprimir(r):
     print("\nPOR CANAL (cuentas contactadas)")
     for canal, c in r["por_canal"].items():
         marca = "  ← CORTE ALCANZADO" if c["corte_alcanzado"] else ""
-        print(f"  {canal}: {c['contactadas']} contactadas · {c['conversaciones']} conversaciones · "
+        maduras = (f" ({c['maduras']} maduras, {c['respondieron_maduras']} respondieron)"
+                   if "maduras" in c else "")
+        print(f"  {canal}: {c['contactadas']} contactadas{maduras} · {c['conversaciones']} conversaciones · "
               f"{c['pagos']} pagos · {c['loi_firmadas']} LOI firmadas{marca}")
     print("\nCUENTAS CON RESPUESTA ABIERTA")
     if not r["calientes"]:

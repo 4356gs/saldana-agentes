@@ -67,3 +67,23 @@ Una entrada por decisión relevante, con el formato siguiente. En la revisión s
 - Disenso (quién y qué sostiene): la Directora proponía A con un coste de 75 min; riesgo lo corrigió a 2,75 h y prefirió B. Se adopta B.
 - Resultado real:
 - Aprendizaje:
+
+## DEC-005 · 2026-11-19 · Pausa del track de LOIs y nueva línea EE. UU. (APR-004 y APR-005)
+- Decidió: CEO, desde el chat. Llega al repositorio por un PR que el propio CEO revisa; el merge equivale a su aprobación.
+- Decisión:
+  - El track de LOIs en España queda en pausa, sin fecha de reanudación (APR-004 en su opción B, solo para ese track). El equipo no se pausa.
+  - Nuevo mandato: vender Primera Respuesta a agentes y equipos inmobiliarios de EE. UU. con clientela hispanohablante, empezando por Florida y Texas, con el Acta `actas/acta-activacion-eeuu.md` (APR-005).
+  - El capital de 3.000 USD y las reglas de tramos no cambian.
+- Alternativas descartadas y por qué:
+  - Seguir con las LOIs: 0 conversaciones serias y el plazo del 1 dic sin margen (`actas/propuesta-disolucion.md`).
+  - Disolver el equipo: el capital está intacto y el equipo ya tiene montados el método y las herramientas.
+  - Otros sectores de EE. UU.:
+    - seguros: menos valor por cliente;
+    - med spas: datos de salud;
+    - contratistas: necesitan voz.
+- Resultado esperado y plazo [ESTIMADO: `herramientas/embudo_eeuu.py`, escenario base]:
+  - al menos 3 conversaciones serias el 2027-02-18 (base: 4,8);
+  - al menos 1 cliente pagando el 2027-04-19 (base: 1,26 esperados, un 72 % de probabilidad de tener al menos uno).
+- Disenso (quién y qué sostiene): pendiente. `riesgo` revisa el Acta en la primera sesión y su tesis contraria se anota aquí.
+- Resultado real:
+- Aprendizaje:
