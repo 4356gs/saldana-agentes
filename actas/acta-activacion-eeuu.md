@@ -1,6 +1,6 @@
 # Acta de Activación · Línea EE. UU. · Primera Respuesta para inmobiliarias
 
-Fecha: 2026-11-19 · Solicitud de aprobación: APR-005 · Revisada por riesgo: no.
+Fecha: 2026-11-19 · Solicitud de aprobación: APR-005 · Revisada por riesgo: sí, 2026-11-20 (dictamen en §14).
 
 La redactó Claude en el chat del CEO, a petición suya, a partir del plan que el CEO aceptó ese día. La primera sesión del equipo la revisa con `riesgo` y anota las objeciones en el reporte, sin bloquear el trabajo sin coste.
 
@@ -186,7 +186,7 @@ Diferencias con el plan del chat del 19 nov, ya incorporadas:
 - **Presupuesto:** 0 USD y unas 2 h del CEO.
 - **Duración:** 14 días desde el primer envío (7–21 dic). El seguimiento +12 cae en fiestas y se mueve al 4 de enero, así que el veredicto se lee con esa salvedad.
 - **Éxito:** al menos 2 respuestas de interés (sin contar bajas ni respuestas automáticas) o al menos 1 conversación seria.
-- **Abandono:** 0 respuestas de interés. El siguiente lote cambia de ángulo, no solo de redacción.
+- **Abandono:** 1 respuesta de interés o menos y ninguna conversación seria. El siguiente lote cambia de ángulo, no solo de redacción. (Comité, 20 nov, objeción 12 de riesgo: con 0 como único umbral, el resultado más probable del escenario base, 1 respuesta, no decidía nada.)
 
 **EXP-US-02 · Texas, mismo mensaje.** 30 cuentas, del 14 al 28 de diciembre, con las mismas métricas y la misma salvedad por las fiestas. Sirve para comparar los dos estados.
 
@@ -195,6 +195,7 @@ Diferencias con el plan del chat del 19 nov, ya incorporadas:
 - mensajes directos en Instagram enviados por el CEO a 20 cuentas (1,5 h).
 
 **Corte de la línea** (en `pipeline.py`, sobre el canal `email_eeuu`):
+- El corte no se lee antes del 15 ene 2027: las 60 cuentas maduras llegan en plenas fiestas (Comité, 20 nov).
 - Si 60 cuentas llevan más de 14 días desde el primer contacto y hay menos de 3 respuestas, ninguna conversación seria y ningún pago, no se sube volumen: se cambia de ángulo o de mensaje.
 - El corte general de 30 cuentas y 5 conversaciones se mantiene para los canales de España. En EE. UU. saltaría a los tres días de envío, antes de que lleguen las respuestas.
 
@@ -215,6 +216,14 @@ Disenso ya registrado, del 20 nov. Claude, en el chat, recomendó vender primero
 - un día 90 con un 36 % de probabilidad de cliente en el escenario base, frente al 42 % anterior.
 
 Beneficio esperado: más credibilidad en el correo y menos riesgo de entrega.
+
+**Dictamen de `riesgo` (2026-11-20).** Veredicto: pasa con cambios.
+- **Tesis contraria:** es el mismo canal que la lección 8 dio por agotado, en uno de los mercados con más correo en frío; vendedor remoto sin casos en EE. UU., con buzón virtual y un dominio cuya web habla de bodegas gallegas; el competidor real es gratis (respuesta automática de WhatsApp Business + Calendly); la única referencia propia de conversión respuesta→conversación es 0 de 5, y con ella la línea es el escenario pesimista (−3.152 USD tras coste sombra). La línea solo se justifica si el corte se aplica sin renegociar.
+- **Aplicado hoy:** identificación comercial en la firma; "WhatsApp" en vez de "WhatsApp o web"; "Re:" solo en hilo; franjas en la hora local de la cuenta; vivienda justa ampliada en la base de la demo (quién vive en una zona, seguridad y escuelas sin cifras ni enlaces, vales de vivienda, adaptaciones por discapacidad, cinco pruebas); nombre ficticio cambiado a "Realty Demo" (existe "Clara Realty, LLC" en Orlando); seguridad de credenciales en OEF-004; `embudo_eeuu.py` reproduce el Acta y calcula la probabilidad de Poisson; criterio de abandono de EXP-US-01 y fecha mínima del corte (§12).
+- **Abierto, con la pregunta 12 al CEO:** el dominio de `cuenta_envio` sostiene el expediente de residencia en Galicia y su aviso legal tiene textos de relleno; validar con quien lleva el expediente que la campaña a EE. UU. desde ese dominio es compatible, y quitar el relleno antes del 7 dic. Teléfono de la firma: si es dominicano, se indica como tal o se omite.
+- **Abierto, antes de la primera propuesta:** capacidad del CEO (10 h de implantación con 2 h/semana libres = 5 semanas; no validado); retenciones o disputas de PayPal en una cuenta nueva; renovación del buzón hasta abril.
+
+**Nota de `oferta-entrega` (2026-11-20).** La demo mínima (OEF-004) no supera la comprobación de activos primero: el flujo de WhatsApp no existe y no hay cuenta que la pida. Es una excepción del CEO, anotada como tal y no firmada como superada. Tope de 8 h + 1 h de vídeo, con punto de parada; congelada tras el vídeo hasta 10 conversaciones serias. No es precedente.
 
 ## 15. Pre-mortem
 "Llegó el 19 de abril de 2027 sin clientes pagando. ¿Por qué?"

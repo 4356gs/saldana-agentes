@@ -84,7 +84,7 @@ Una entrada por decisión relevante, con el formato siguiente. En la revisión s
 - Resultado esperado y plazo [ESTIMADO: `herramientas/embudo_eeuu.py`, escenario base]:
   - al menos 3 conversaciones serias el 2027-02-18 (base: 4,8);
   - al menos 1 cliente pagando el 2027-04-19 (base: 1,26 esperados, un 72 % de probabilidad de tener al menos uno).
-- Disenso (quién y qué sostiene): pendiente. `riesgo` revisa el Acta en la primera sesión y su tesis contraria se anota aquí.
+- Disenso (quién y qué sostiene): `riesgo` (20 nov): es el mismo canal que la lección 8 dio por agotado; con la única referencia propia (0 de 5 respuestas a conversación) la línea es el escenario pesimista. Solo se justifica si el corte se aplica sin renegociar. Detalle en el Acta §14.
 - Resultado real:
 - Aprendizaje:
 
@@ -104,5 +104,19 @@ Una entrada por decisión relevante, con el formato siguiente. En la revisión s
   - al menos 3 conversaciones serias el 2027-02-18 (base: 4,2);
   - al menos 1 cliente pagando el 2027-04-19 (base: 1,17 esperados, un 69 % de probabilidad de tener al menos uno).
 - Disenso (quién y qué sostiene): Claude sostuvo vender primero. La excepción cuesta una semana de venta antes del control y abre el riesgo del patrón de construir y refinar; el tope de 8 h y el punto de parada lo acotan.
+- Resultado real:
+- Aprendizaje:
+
+## DEC-007 · 2026-11-20 · Primera sesión de la línea EE. UU.: dictamen de riesgo y lote 1 de 9 cuentas
+- Decidió: Directora, con el Comité (riesgo, oferta-entrega, inteligencia-comercial, desarrollo-negocio, ejecucion-fisica, finanzas-control).
+- Decisión:
+  - Se aplican las objeciones de riesgo a plantillas, base de la demo, OEF-004/005 y `embudo_eeuu.py` (Acta §14).
+  - EXP-US-01: abandono con ≤1 respuesta de interés y 0 conversaciones; el corte de la línea no se lee antes del 15 ene 2027.
+  - Lote 1 con 9 cuentas, no 30: de 17 candidatas, 9 cumplen la definición de cuenta cualificada tras la revisión de riesgo. APR-006. El lote 1b (hasta completar 30) llevará su propio APR.
+  - Se acepta Invierte en Miami (opera bajo Miami New Realty) y se excluye The Cuervo Team (bajo LPT Realty): la primera tiene web, equipo y contacto propios.
+  - Compromisos del tramo 1: 100 USD (OEF-004) y 80 USD (OEF-005), MOV-0001 y MOV-0002.
+- Alternativas descartadas: rellenar el lote hasta 30 relajando la definición (decisor sin verificar, correos Gmail o de franquicias); esperar a tener 30 para pedir el APR.
+- Resultado esperado y plazo: 9 primeros contactos el 7 y 8 dic; ≥2 respuestas de interés o ≥1 conversación seria antes del 21 dic (con la salvedad de las fiestas).
+- Disenso: riesgo sostiene que 9 cuentas no permiten leer el criterio de éxito y que un 0 de 9 no demostraría nada. Por eso EXP-US-01 se lee con el lote 1b sumado.
 - Resultado real:
 - Aprendizaje:

@@ -6,13 +6,20 @@ estado/pipeline.csv. Cuando los haya, se sustituyen pasando los argumentos.
 
 Uso:
   python3 herramientas/embudo_eeuu.py
-  python3 herramientas/embudo_eeuu.py --por-semana 30 --semanas-utiles 6 --semanas-anio 40
+  python3 herramientas/embudo_eeuu.py --por-semana 30 --semanas-utiles 13 --semanas-anio 40
+
+Momentos del Acta EE. UU. §7 (envíos desde el 7 dic, ciclo de venta de --ciclo-semanas):
+  control 18 feb: 7 semanas de envío (mide conversaciones) -> --semanas-utiles 7
+  día 90:         5 semanas útiles (7 de envío menos el ciclo) -> --semanas-utiles 5
+  límite 19 abr:  13 semanas útiles (valor por defecto)
+La probabilidad de tener al menos un cliente es 1 - exp(-clientes esperados) (Poisson) [ESTIMADO].
   python3 herramientas/embudo_eeuu.py --implantacion 1500 --mensual 300
 
 Solo usa la biblioteca estándar. Lee estado/parametros.json (coste_hora_ceo, horas).
 """
 import argparse
 import json
+import math
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -45,8 +52,10 @@ def main():
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--por-semana", type=int, default=30,
                     help="primeros contactos por semana (tope legal del equipo: 10 al día)")
-    ap.add_argument("--semanas-utiles", type=int, default=6,
+    ap.add_argument("--semanas-utiles", type=int, default=13,
                     help="semanas de envío cuyo ciclo puede cerrar antes de la fecha límite")
+    ap.add_argument("--ciclo-semanas", type=int, default=4,
+                    help="semanas desde el primer contacto hasta el cobro (solo informativo)")
     ap.add_argument("--semanas-anio", type=int, default=40,
                     help="semanas de envío en 12 meses (descontando festivos)")
     ap.add_argument("--implantacion", type=float, default=2500, help="USD por implantación")
@@ -66,14 +75,14 @@ def main():
 
     print("EMBUDO HASTA LA FECHA LÍMITE (valores esperados)")
     print(f"  {'escenario':10} {'contactos':>9} {'respuestas':>10} {'conversac.':>10} "
-          f"{'propuestas':>10} {'clientes':>8}")
+          f"{'propuestas':>10} {'clientes':>8} {'P(>=1)':>7}")
     for nombre, (r, c, p, g) in ESCENARIOS.items():
         n = a.por_semana * a.semanas_utiles
         resp = n * r
         conv = resp * c
         prop = conv * p
         cli = prop * g
-        print(f"  {nombre:10} {n:9d} {resp:10.1f} {conv:10.1f} {prop:10.1f} {cli:8.2f}")
+        print(f"  {nombre:10} {n:9d} {resp:10.1f} {conv:10.1f} {prop:10.1f} {cli:8.2f} {1 - math.exp(-cli):7.0%}")
 
     print("\nPROYECCIÓN A 12 MESES (valores esperados, ingresos cobrados netos de comisión de cobro)")
     horas_venta = HORAS_VENTA_SEMANA * a.semanas_anio

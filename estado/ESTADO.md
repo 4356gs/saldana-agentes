@@ -1,23 +1,16 @@
 # ESTADO DEL EQUIPO
 
-Actualizado: 2026-11-20 (sin novedades en la bandeja; LOIs 0/3, 11 días; Barrancolí pidió factura el 19 nov, pendiente de OEF-001 y del CEO)
-Fase: 1, con el Acta sin aprobar (APR-001) y una propuesta de pausa o disolución pendiente (APR-004, `actas/propuesta-disolucion.md`). **Gasto nuevo congelado** hasta que el CEO decida.
-Negocio: Saldaña Digital, fijado.
+Actualizado: 2026-11-20 (tarde; primera sesión de la línea EE. UU.)
+Fase: 3 de la línea EE. UU. (Acta `actas/acta-activacion-eeuu.md`, APR-005). Track de LOIs en España en pausa desde el 19 nov (APR-004 B): sin trabajo ni recordatorios.
+Negocio: Saldaña Digital, fijado. Producto: Primera Respuesta para agentes y equipos inmobiliarios de EE. UU. con clientela hispanohablante.
 
 ## Números
-Salida de `herramientas/pipeline.py` y `herramientas/caja.py` del 2026-11-16:
-- **LOIs firmadas: 0 / 3** (ideal 5) · **15 días** hasta el 2026-12-01.
-- Embudo:
-  - Cuentas en el pipeline: 73. Contactadas: 64. Respondieron: 5.
-  - Conversaciones serias: 0. Pagos: 0.
-  - Criterio de corte alcanzado en `email_frio`.
-  - Faltan por cargar unos 45 envíos de octubre (APR-002).
-- Albamar: pidió WhatsApp el 6 oct y lleva 41 días sin respuesta nuestra.
-- Caja: 3.000 USD.
-  - Comprometido: 0. Disponible: 2.400.
-  - Horas del CEO esta semana: 0 / 6.
-- Alerta: `jurisdiccion` PENDIENTE.
-- Sin respuesta del CEO desde el 2 nov.
+Salida de `herramientas/pipeline.py` y `herramientas/caja.py` del 2026-11-20:
+- **Clientes pagando: 0 / 1** · 90 días hasta el control (2027-02-18) · 150 días hasta el límite (2027-04-19).
+- Línea EE. UU.: 9 cualificadas (Florida), 8 identificadas, 0 contactadas, 0 respuestas, 0 conversaciones serias.
+- Caja: 3.000 USD · gastado 0 · comprometido 180 (MOV-0001 OEF-004 100; MOV-0002 OEF-005 80) · disponible 2.220 · margen tramo 1: 820 · semanal 180/250.
+- Horas del CEO esta semana: 0 / 6.
+- Alerta: `jurisdiccion` pendiente (parte fiscal; bloquea la primera propuesta con precio).
 
 ## Organigrama vigente
 - Directora General (sesión principal)
@@ -30,51 +23,37 @@ Salida de `herramientas/pipeline.py` y `herramientas/caja.py` del 2026-11-16:
 
 Subequipos: ninguno.
 
-## Experimentos activos
-Ninguno activo hasta APR-001. Previstos en el Acta (§12):
-- **EXP-01 · Albamar por WhatsApp**
-  - Cuenta: bodegas-albamar. Presupuesto: 0 USD y 1,5 h de CEO. Plazo: 16 nov.
-  - Éxito: conversación seria.
-  - Abandono: sin respuesta tras el mensaje y un recordatorio a +5 días.
-- **EXP-02 · Red cálida del CEO**
-  - Cuentas: las que nombre el CEO antes del 6 nov. Presupuesto: 0 USD y 2,5 h/semana. Plazo: 18 nov.
-  - Éxito: ≥2 conversaciones serias.
-  - Abandono: menos de 4 cuentas el 6 nov, o 0 conversaciones el 18 nov.
-- **EXP-03 · LOI de colaboración**
-  - Condicionado a la OEF-001. Presupuesto: 0 USD y 1 h/semana. Plazo: 22 nov.
-  - Éxito: ≥1 conversación seria con un socio.
-  - Abandono: no cuenta para el expediente, o 0 conversaciones.
+## Experimentos
+- **EXP-US-01 · Florida, correo en el idioma de la web** · lote 1 de 9 cuentas listo (APR-006) · envíos 7–8 dic, seguimientos 14–15 dic y 4 ene · 0 USD, ~1,1 h del CEO · éxito: ≥2 respuestas de interés o ≥1 conversación seria · abandono: ≤1 respuesta y 0 conversaciones · se lee con el lote 1b sumado.
+- **EXP-US-02 · Texas** · 30 cuentas, 14–28 dic · cualificación pendiente.
+- Corte de la línea: 60 cuentas maduras; no se lee antes del 15 ene 2027.
 
 ## OEF abiertas
-- OEF-001 · Validar el formato de LOI, la fecha y la facturación con quien lleva el expediente · 0,5 h · límite 2026-11-06 · autorizada por el CEO
-- OEF-002 · WhatsApp y llamada con Albamar · 1,5 h · límite 2026-11-16 · requiere APR-001 y APR-003
-- OEF-003 · Lista de red cálida · 0,75 h · límite 2026-11-06 · requiere APR-001
+- OEF-004 · Demo mínima de Primera Respuesta y vídeo · 8 h + 1 h · hasta 100 USD · límite 2026-12-04 · excepción del CEO a activos primero
+- OEF-005 · Buzón postal virtual en EE. UU. · 1 h · hasta 80 USD · límite 2026-12-04
+- En pausa con el track de España: OEF-001, OEF-002, OEF-003.
 
 ## Aprobaciones pendientes del CEO
-- APR-004 · Reactivar, pausar o disolver · solicitada 2026-11-16 · recomendación: B (pausa), o A si antes del 18 nov se aprueba APR-001 y hay al menos 4 cuentas de red
-- APR-001 · Acta de Activación "Cálido primero" · 0 USD, 6 h/sem · solicitada 2026-11-02 · recomendación: Sí
-- APR-002 · Conciliación de octubre y descarte de cuentas de logística · 0 USD · solicitada 2026-11-02 · recomendación: Sí
-- APR-003 · Lote S45: un WhatsApp a Albamar, con el número a elegir por el CEO · 0 USD · solicitada 2026-11-02 · recomendación: Sí
+- APR-006 · Lote 1 EXP-US-01 (9 correos) · 0 USD · solicitada 2026-11-20 · recomendación: Sí
+- En pausa con el track de España: APR-001, APR-002, APR-003.
 
 ## Preguntas abiertas al CEO
-Las 7 de `bandeja/CEO.md`. Crítica: la lista de red cálida, antes del 6 nov.
+- 8 (seguimientos de noviembre y Barrancolí; track España)
+- 10 (parte fiscal del cobro en USD; contador)
+- 11 (dirección del buzón, cuando esté activa)
+- 12 (nueva; bloquea el 7 dic): nombre y teléfono de la firma, aviso legal de la web con textos de relleno, compatibilidad de la campaña con el expediente.
 
 ## Cuentas bloqueadas para contacto
-- Todas las de `salidas/material/conciliacion-correo-2026-11-02.md`, hasta APR-002.
-- Grupo El Teide, hasta saber de dónde viene el contacto.
-- Barrancolí, excluida de LOIs. El motivo "factura pendiente" está en duda: dice que pagó en febrero (correo del 5 nov) y lo concilia el CEO.
+- Todas las cuentas españolas, mientras dure la pausa.
+- Línea EE. UU.: orlando-realty-consultants y willard-realty-team, hasta verificar broker/decisor (DBPR/Sunbiz); perez-realty-team, amg-int-realty, us-prime-realty-orlando, coastline-realty-lake-worth, the-cuervo-team y xuma-miami, solo identificadas.
 
-## Disparadores de disolución
-Propuestos en el Acta §17; entran en vigor con APR-001:
-- 0 conversaciones serias el 2026-11-16;
-- 0 LOIs el 2026-12-01;
-- 990 USD o más gastados sin ingresos;
-- menos de 4 cuentas cálidas el 2026-11-06.
+## Disparadores de cierre de la línea (Acta §17)
+1. 18 feb 2027: menos de 3 conversaciones serias y ningún cliente pagando — 90 días.
+2. 19 abr 2027: ningún cliente pagando — 150 días.
+3. 990 USD gastados sin ingresos — gastado 0.
+4. 7 días sin respuesta del CEO con un lote u OEF pendiente — reloj desde el 20 nov (APR-006, OEF-004/005).
+5. Queja formal por spam o mala reputación del dominio — ninguna.
 
 ## Próxima acción
-Esperar APR-004:
-- **A:** diagnóstico y borrador por cada cuenta de red, y carga de la conciliación.
-- **B:** reportes de 3 líneas hasta la fecha de reanudación.
-- **C:** cancelar las OEF y archivar.
-
-La OEF-001 sigue siendo necesaria en cualquier caso.
+- CEO: OEF-004 (hasta 6 h esta semana), OEF-005, pregunta 12 y APR-006.
+- Equipo: lote 1b de Florida (hasta 21 cuentas) con fuentes más productivas y su propio APR antes del 4 dic; cualificación de Texas para EXP-US-02. Nada se envía del 23 al 27 nov.
