@@ -148,7 +148,7 @@ Si una dirección no aparece en la web, ese borrador no se envía y se avisa en 
 | Respuesta | Siguiente paso |
 |---|---|
 | Sí, manda el vídeo | Contestar con el enlace y dos franjas para una llamada de 15 minutos. No se envía el correo 2. `ejecucion-fisica` prepara la OEF de la llamada con el guion de la plantilla. |
-| ¿Cuánto cuesta? | El precio no se da por correo: "Depende del volumen de consultas. En una llamada de 15 minutos le doy una cifra cerrada", más dos franjas. |
+| ¿Cuánto cuesta? | El precio no se da por correo: "Depende del volumen de consultas. En una llamada de 15 minutos lo vemos con sus números y le envío la cifra por escrito" (cambio de riesgo del 21 nov: la cifra no se da en la llamada mientras `jurisdiccion` esté pendiente), más dos franjas. |
 | Ya tengo una herramienta | Preguntar cuál y si responde en español por WhatsApp y agenda sola. Si es que sí a todo, cerrar con cortesía. |
 | Baja / unsubscribe | `no_contactar` el mismo día. No se contesta. |
 | Fuera de la oficina | Reintentar tras la fecha de vuelta, con al menos 5 días desde el último toque. |

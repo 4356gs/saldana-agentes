@@ -33,3 +33,8 @@ Directo, correo individual en borrador (`email_eeuu`).
 
 ## Historial con el equipo
 `pipeline.py --cuenta willard-realty-team` (2026-11-20): sin historial en el pipeline.
+
+## Intento de subsanar decisor (2026-11-21, inteligencia-comercial): NO resuelto
+- Sunbiz y DBPR no son accesibles desde este entorno (el proxy no los deja pasar). No se verificó broker, licencia ni oficiales de la sociedad.
+- Lo verificado en perfiles públicos: Justin Willard figura con "Agent License" FL 3032615 y brokerage Willard Realty Team Corp [VERIFICADO + https://homes.com/real-estate-agents/justin-willard/2mezx38]; Zillow lo muestra como líder del equipo (254 reseñas de equipo; inglés y español) sin título de broker [VERIFICADO + https://www.zillow.com/profile/Willard Realty Team]. Claudia Willard: "Real Estate Agent at Willard Realty Team Corp" [VERIFICADO + https://www.homelight.com/agents/claudia-willard-fl-3066206].
+- Conclusión: es posible que ninguno de los dos sea el broker de la sociedad. Cargo de decisor sigue sin verificar. Sin consulta de DBPR/Sunbiz (2 minutos del CEO o de un delegado en myfloridalicense.com y search.sunbiz.org) no cualifica.

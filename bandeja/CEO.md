@@ -31,7 +31,8 @@ Una línea por decisión:
 - `CAMBIOS APR-### — qué cambiar`
 
 Pendientes:
-- **APR-006 · Lote 1 de EXP-US-01: 9 correos a inmobiliarias de Florida** (`salidas/borradores/2026-12-07-lote1-eeuu/LOTE.md`). 6 envíos el lunes 7 dic y 3 el martes 8 dic, de 9:00 a 10:40 hora del Este; seguimientos el 14–15 dic y el 4 ene. 0 USD; 66 min tuyos en total. Revisado por riesgo. Condiciones: OEF-004 y OEF-005 hechas y la pregunta 12 respondida; ningún borrador se carga en Outlook con marcas sin sustituir. Recomendación: **sí**. Si quieres excluir Invierte en Miami (opera bajo otra correduría), escribe `CAMBIOS APR-006 — sin invierte-en-miami-group`.
+- **APR-006 · Lote 1 de EXP-US-01: 9 correos a inmobiliarias de Florida** (`salidas/borradores/2026-12-07-lote1-eeuu/LOTE.md`). 6 envíos el lunes 7 dic y 3 el martes 8 dic, de 9:00 a 10:40 hora del Este; seguimientos el 14–15 dic y el 4 ene. 0 USD; 66 min tuyos en total. Revisado por riesgo. Condiciones: OEF-004 y OEF-005 hechas y la pregunta 12 respondida; ningún borrador se carga en Outlook con marcas sin sustituir. Recomendación: **sí**. Si quieres excluir Invierte en Miami (opera bajo otra correduría), escribe `CAMBIOS APR-006 — sin invierte-en-miami-group`. Cambio menor del 21 nov en la guía de respuestas (no en los correos): a "¿cuánto cuesta?" se contesta que la cifra va por escrito tras la llamada, porque la parte fiscal (pregunta 10) sigue abierta.
+- **APR-007 · Lote 1b de EXP-US-01: 4 correos más a Florida** (`salidas/borradores/2026-12-08-lote1b-eeuu/LOTE.md`): Alexander Peña APC Team, Viva Orlando Realty, Valdivia Home Team y The Gomez Team (Met Real Estate). Martes 8 dic, de 10:30 a 12:00 hora del Este, tras los 3 del lote 1 (7 ese día, tope 10); seguimientos el 15 dic y el 4 ene. 0 USD; 24 min tuyos. Revisado por riesgo (pasa con cambios, aplicados). Mismas condiciones que APR-006, y si el lote 1 se mueve, este se mueve con él. Ojo: tres operan bajo corredurías no verificadas (United Realty Group es grande) y Valdivia y Met solo muestran el español en Zillow. Riesgo propone mandar solo Alexander. Recomendación: **sí, las cuatro**. Para recortar: `CAMBIOS APR-007 — sin valdivia-home-team, met-real-estate-gomez-team`.
 
 ## OEF ejecutadas
 `OEF-### | hecha / fallida / delegada a <quién> | horas | coste | evidencia (enlace o descripción)`
@@ -39,6 +40,7 @@ Pendientes:
 Abiertas (revisadas por riesgo y por ejecucion-fisica el 20 nov):
 - **OEF-004** · demo mínima de Primera Respuesta y vídeo · 8 h máx. + 1 h de vídeo · hasta 100 USD · límite 4 dic. Esta semana (23–27 nov) hasta 6 h. Ojo: cambió el nombre del equipo ficticio a "Realty Demo" y ahora son cinco pruebas, no tres.
 - **OEF-005** · buzón virtual en EE. UU. · 1 h · hasta 80 USD · límite 4 dic.
+- **OEF-006** (nueva, 21 nov) · verificar en pantalla 8 cuentas que el equipo no puede leer (webs, DBPR, Sunbiz, Zillow) · 25 min · 0 USD · delegable · límite 2 dic. Pega lo copiado aquí. Habilita hasta 6 cuentas más para el lote 1b y confirma Valdivia y Met.
 
 ## Eventos comerciales
 Todo lo que pasó con una cuenta y el equipo no puede ver: envíos hechos, respuestas, llamadas, reuniones y pagos.

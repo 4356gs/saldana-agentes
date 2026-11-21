@@ -120,3 +120,19 @@ Una entrada por decisión relevante, con el formato siguiente. En la revisión s
 - Disenso: riesgo sostiene que 9 cuentas no permiten leer el criterio de éxito y que un 0 de 9 no demostraría nada. Por eso EXP-US-01 se lee con el lote 1b sumado.
 - Resultado real:
 - Aprendizaje:
+
+## DEC-008 · 2026-11-21 · Lote 1b de EXP-US-01 (4 cuentas) y criterio de señal de español
+- Decidió: Directora, con inteligencia-comercial, desarrollo-negocio, riesgo y ejecucion-fisica.
+- Decisión:
+  - Lote 1b con 4 cuentas cualificadas (alexander-pena-apc-team, viva-orlando-realty, valdivia-home-team, met-real-estate-gomez-team), no 21. APR-007, misma entrega que APR-006, con los cambios de riesgo aplicados.
+  - Criterio de señal de español: el campo de idiomas de un perfil profesional (Zillow) cuenta como "anuncio" en el sentido de CLAUDE.md §8 y es la señal **mínima** admisible. No se rebaja más. OEF-006 lo confirma en pantalla para valdivia y met antes del envío.
+  - acevedo-team-exp (bajo eXp Realty) queda como identificada: el contexto excluye redes con herramientas corporativas obligatorias y no está verificado que eXp no lo sea.
+  - viva-orlando-realty cuenta: su web tiene página en español (alquileres) y agentes bilingües; el correo va en inglés y habla de "buying or renting".
+  - Respuesta "¿cuánto cuesta?" de los lotes 1 y 1b: ya no se promete una cifra en la llamada, sino por escrito después, mientras `jurisdiccion` esté pendiente.
+  - OEF-006 (25 min, delegable, 0 USD): verificación en pantalla de 8 cuentas que el entorno no puede leer (DBPR, Sunbiz, webs bloqueadas).
+- Alternativas descartadas: rellenar hasta 21 con cuentas sin correo legible o bajo redes; enviar solo alexander (tesis de riesgo).
+- Resultado esperado y plazo: 13 primeros contactos de EXP-US-01 el 7–8 dic; hasta 8 más si OEF-006 los habilita antes del 2 dic. El lote 1b se lee por separado del lote 1.
+- Disenso: riesgo sostiene que el lote existe para engordar el denominador: valdivia y met no tienen WhatsApp, su embudo visible es de vendedores y su única señal de español es una casilla de Zillow; United Realty Group es de las mayores corredurías de Broward. Propone mandar solo alexander. La Directora mantiene las 4 porque cumplen la definición, el coste marginal es de 24 min y el CEO puede excluir cualquiera con CAMBIOS.
+- Aprendizaje de método: los listados de Zillow por ciudad dieron 3 de 4 cualificadas (unas 4 por cada 40 perfiles); NAHREP, FastExpert y la búsqueda genérica, 0. DBPR, Sunbiz y Realtor.com no son accesibles desde el entorno. 30 cuentas/semana exigen una pasada manual en pantalla de 2–3 h: se usa Zillow por ciudad como fuente primaria para Texas.
+- Resultado real:
+- Aprendizaje:

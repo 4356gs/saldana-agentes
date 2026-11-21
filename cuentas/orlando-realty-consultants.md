@@ -36,3 +36,8 @@ Historial: `pipeline.py --cuenta orlando-realty-consultants` (2026-11-20): sin h
 
 ## Pendiente
 - Reseñas y velocidad web: no medido.
+
+## Intento de subsanar decisor (2026-11-21, inteligencia-comercial): NO resuelto
+- Sunbiz y DBPR no son accesibles desde este entorno. La web sigue sin nombrar broker, propietario ni número de licencia [VERIFICADO + https://orlandorealtyconsultants.com/es/].
+- Una ficha de terceros muestra una "Jenny Zamora" con licencia FL BK3107963 en Keller Williams Legacy Realty (Kissimmee) [VERIFICADO + https://agentpronto.com/agents/jennifer-zamora-81052]. No se puede afirmar que sea la misma persona, y apuntaría a una agente bajo KW, no a la propietaria de ORC. No se usa.
+- Conclusión: decisor y correo siguen sin cualificar (el texto visible del correo es Gmail). Pendiente de DBPR/Sunbiz.
