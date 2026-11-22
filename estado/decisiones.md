@@ -136,3 +136,17 @@ Una entrada por decisión relevante, con el formato siguiente. En la revisión s
 - Aprendizaje de método: los listados de Zillow por ciudad dieron 3 de 4 cualificadas (unas 4 por cada 40 perfiles); NAHREP, FastExpert y la búsqueda genérica, 0. DBPR, Sunbiz y Realtor.com no son accesibles desde el entorno. 30 cuentas/semana exigen una pasada manual en pantalla de 2–3 h: se usa Zillow por ciudad como fuente primaria para Texas.
 - Resultado real:
 - Aprendizaje:
+
+## DEC-009 · 2026-11-22 · Primera tanda de Texas (EXP-US-02) y tope de esfuerzo
+- Decidió: Directora, con inteligencia-comercial, desarrollo-negocio, riesgo y ejecucion-fisica.
+- Decisión:
+  - De unos 60 listados de Zillow en Houston, Dallas, Fort Worth y San Antonio sale 1 cualificada: compean-group (EV-0132), condicionada. No entra en lote hasta que OEF-006 bloque D confirme en pantalla la página /es y el broker patrocinador en la TREC. Encaje 3: ya tiene un bot web ("Aria"); el borrador lo reconocerá y propondrá complementarlo con WhatsApp. Nadie interactúa con el bot.
+  - Identificadas (EV-0133–0136): julio-romero-realtors (tamaño y broker-propietario sin resolver; TREC en OEF-006 D3), mark-dimas-team (72 miembros), vive-realty-houston (solo Gmail; un Gmail no cuenta como correo profesional), rangel-real-estate-group (bajo Real Broker, coherencia con DEC-008).
+  - Criterios sin cambios: cualquier cambio (Gmail, tamaño mayor de 15, redes en la nube) solo por DEC general, nunca por cuenta.
+  - OEF-006 se amplía con un bloque D de unos 8 min (total ~33 min, 0 USD, delegable), revisado por riesgo.
+  - Tope de esfuerzo en Texas: no se pide al CEO la pasada manual de 2–3 h. El volumen de Texas espera a la primera lectura de EXP-US-01 (respuestas del 7–15 dic). Antes de eso, una sola prueba de fuente alternativa; si da menos de 2 cualificadas por cada 60 perfiles, EXP-US-02 se reduce a lo que haya y se registra.
+- Alternativas descartadas: OEF de pasada manual de 2–3 h (compite con la demo, OEF-004, por las 6 h semanales y no cambia la fuente); rebajar criterios para llenar el lote.
+- Resultado esperado y plazo: compean y quizá julio-romero listas para lote antes del 4 dic si OEF-006 se hace; EXP-US-02 probablemente por debajo de 30 cuentas.
+- Disenso: inteligencia-comercial propone la pasada manual para llegar a 30; riesgo sostiene que no cambia la fuente ni el filtro y que cualificar 30 cuentas de Texas antes de saber si el mensaje funciona no aporta información. La Directora sigue a riesgo.
+- Resultado real:
+- Aprendizaje:

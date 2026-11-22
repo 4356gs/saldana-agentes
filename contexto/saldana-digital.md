@@ -64,6 +64,7 @@ Lo que sí ha funcionado:
 
 8. Más volumen con mensajes mejores no abre conversaciones: unas 105 cuentas frías entre agosto y octubre, 0 conversaciones serias [ESTIMADO, 2 nov]. El canal de correo en frío queda cortado.
 9. La única respuesta cálida de octubre (Albamar pidió WhatsApp el 6 oct) se quedó sin contestar durante casi un mes mientras se enviaban correos fríos. Lo cálido va primero (cultura del Acta, principio 1).
+10. Línea EE. UU., cualificación de Texas (22 nov): Zillow por ciudad da en Texas alrededor de 1 cuenta cualificada por cada 60 listados (frente a unas 4 por cada 40 en Florida). Pocos equipos con español visible y correo de dominio propio, muchos bajo eXp, Keller Williams o Real Broker. Más horas sobre la misma fuente no cambian el rendimiento: se cambia de fuente o se reduce el experimento (DEC-009).
 
 ## 6. Red, canales e instituciones
 

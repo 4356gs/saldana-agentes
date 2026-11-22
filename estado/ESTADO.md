@@ -1,13 +1,13 @@
 # ESTADO DEL EQUIPO
 
-Actualizado: 2026-11-21
+Actualizado: 2026-11-22
 Fase: 3 de la línea EE. UU. (Acta `actas/acta-activacion-eeuu.md`, APR-005). Track de LOIs en España en pausa desde el 19 nov (APR-004 B): sin trabajo ni recordatorios.
 Negocio: Saldaña Digital, fijado. Producto: Primera Respuesta para agentes y equipos inmobiliarios de EE. UU. con clientela hispanohablante.
 
 ## Números
-Salida de `herramientas/pipeline.py` y `herramientas/caja.py` del 2026-11-21:
-- **Clientes pagando: 0 / 1** · 89 días hasta el control (2027-02-18) · 149 días hasta el límite (2027-04-19).
-- Línea EE. UU.: 13 cualificadas (Florida), 13 identificadas, 0 contactadas, 0 respuestas, 0 conversaciones serias.
+Salida de `herramientas/pipeline.py` y `herramientas/caja.py` del 2026-11-22:
+- **Clientes pagando: 0 / 1** · 88 días hasta el control (2027-02-18) · 148 días hasta el límite (2027-04-19).
+- Línea EE. UU.: 14 cualificadas (13 Florida, 1 Texas condicionada), 17 identificadas, 0 contactadas, 0 respuestas, 0 conversaciones serias.
 - Caja: 3.000 USD · gastado 0 · comprometido 180 (MOV-0001 OEF-004 100; MOV-0002 OEF-005 80) · disponible 2.220 · margen tramo 1: 820 · semanal 180/250.
 - Horas del CEO esta semana: 0 / 6.
 - Alerta: `jurisdiccion` pendiente (parte fiscal; bloquea la primera propuesta con precio).
@@ -25,13 +25,13 @@ Subequipos: ninguno.
 
 ## Experimentos
 - **EXP-US-01 · Florida, correo en el idioma de la web** · lote 1 de 9 cuentas listo (APR-006) · lote 1b de 4 listo (APR-007, 8 dic; se lee por separado) · envíos 7–8 dic, seguimientos 14–15 dic y 4 ene · 0 USD, ~1,1 h del CEO · éxito: ≥2 respuestas de interés o ≥1 conversación seria · abandono: ≤1 respuesta y 0 conversaciones · se lee con el lote 1b sumado.
-- **EXP-US-02 · Texas** · 30 cuentas, 14–28 dic · cualificación pendiente.
+- **EXP-US-02 · Texas** · objetivo 30 cuentas, 14–28 dic · 1 cualificada condicionada (compean-group, pendiente de OEF-006 D) y 4 identificadas · tope de esfuerzo (DEC-009): el volumen espera a la primera lectura de EXP-US-01; probablemente menos de 30.
 - Corte de la línea: 60 cuentas maduras; no se lee antes del 15 ene 2027.
 
 ## OEF abiertas
 - OEF-004 · Demo mínima de Primera Respuesta y vídeo · 8 h + 1 h · hasta 100 USD · límite 2026-12-04 · excepción del CEO a activos primero
 - OEF-005 · Buzón postal virtual en EE. UU. · 1 h · hasta 80 USD · límite 2026-12-04
-- OEF-006 · Verificación en pantalla de 8 cuentas (webs, DBPR, Sunbiz, Zillow) · 25 min · 0 USD · delegable · límite 2026-12-02
+- OEF-006 · Verificación en pantalla de 8 cuentas de Florida y 2 de Texas (webs, DBPR, Sunbiz, Zillow, TREC) · ~33 min · 0 USD · delegable · límite 2026-12-02
 - En pausa con el track de España: OEF-001, OEF-002, OEF-003.
 
 ## Aprobaciones pendientes del CEO
@@ -47,7 +47,7 @@ Subequipos: ninguno.
 
 ## Cuentas bloqueadas para contacto
 - Todas las cuentas españolas, mientras dure la pausa.
-- Línea EE. UU.: orlando-realty-consultants y willard-realty-team, hasta verificar broker/decisor (DBPR/Sunbiz); perez-realty-team, amg-int-realty, us-prime-realty-orlando, coastline-realty-lake-worth, the-cuervo-team, xuma-miami, acevedo-team-exp (bajo eXp), bella-mar-real-estate, rds-realty, mav-united-realty-andres-sanchez y perez-team-united-realty, solo identificadas (las cuatro últimas, pendientes de OEF-006).
+- Línea EE. UU.: orlando-realty-consultants y willard-realty-team, hasta verificar broker/decisor (DBPR/Sunbiz); perez-realty-team, amg-int-realty, us-prime-realty-orlando, coastline-realty-lake-worth, the-cuervo-team, xuma-miami, acevedo-team-exp (bajo eXp), bella-mar-real-estate, rds-realty, mav-united-realty-andres-sanchez y perez-team-united-realty, solo identificadas (las cuatro últimas, pendientes de OEF-006). Texas: compean-group (cualificada, no entra en lote hasta OEF-006 D), julio-romero-realtors (pendiente TREC), mark-dimas-team, vive-realty-houston y rangel-real-estate-group, identificadas.
 
 ## Disparadores de cierre de la línea (Acta §17)
 1. 18 feb 2027: menos de 3 conversaciones serias y ningún cliente pagando — 90 días.
@@ -58,4 +58,4 @@ Subequipos: ninguno.
 
 ## Próxima acción
 - CEO: OEF-004 (hasta 6 h esta semana), OEF-005, OEF-006 (delegable), pregunta 12, APR-006 y APR-007.
-- Equipo: con OEF-006, redactar y pasar por riesgo las cuentas que cualifiquen (lote 1c) antes del 4 dic; cualificación de Texas para EXP-US-02 con listados de Zillow por ciudad (DEC-008). Nada se envía del 23 al 27 nov.
+- Equipo: con OEF-006, redactar y pasar por riesgo las cuentas que cualifiquen (lote 1c) antes del 4 dic; borrador de compean-group si OEF-006 D la confirma; una sola prueba de fuente alternativa para Texas (DEC-009). Nada se envía del 23 al 27 nov.

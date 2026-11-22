@@ -40,7 +40,7 @@ Pendientes:
 Abiertas (revisadas por riesgo y por ejecucion-fisica el 20 nov):
 - **OEF-004** · demo mínima de Primera Respuesta y vídeo · 8 h máx. + 1 h de vídeo · hasta 100 USD · límite 4 dic. Esta semana (23–27 nov) hasta 6 h. Ojo: cambió el nombre del equipo ficticio a "Realty Demo" y ahora son cinco pruebas, no tres.
 - **OEF-005** · buzón virtual en EE. UU. · 1 h · hasta 80 USD · límite 4 dic.
-- **OEF-006** (nueva, 21 nov) · verificar en pantalla 8 cuentas que el equipo no puede leer (webs, DBPR, Sunbiz, Zillow) · 25 min · 0 USD · delegable · límite 2 dic. Pega lo copiado aquí. Habilita hasta 6 cuentas más para el lote 1b y confirma Valdivia y Met.
+- **OEF-006** (21 nov, ampliada el 22 nov) · verificar en pantalla 8 cuentas de Florida y 2 de Texas que el equipo no puede leer (webs, DBPR, Sunbiz, Zillow, TREC) · ~33 min · 0 USD · delegable · límite 2 dic. Pega lo copiado aquí. Habilita hasta 6 cuentas más de Florida, confirma Valdivia y Met y decide si Compean Group (Houston) entra en lote.
 
 ## Eventos comerciales
 Todo lo que pasó con una cuenta y el equipo no puede ver: envíos hechos, respuestas, llamadas, reuniones y pagos.
