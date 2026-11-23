@@ -89,6 +89,7 @@ Referentes:
   - el vídeo va en el segundo correo.
 - **Plantillas base:** `salidas/material/eeuu-inmobiliarias-plantillas.md`.
 - **Nunca:** SMS, WhatsApp ni llamadas en frío a prospectos.
+- **Fuentes de cuentas accesibles desde el entorno del equipo** (DEC-008, DEC-009, DEC-010): Zillow por ciudad, sí (unas 4 cualificadas por 40 perfiles en Florida; 1 por 60 en Texas). No accesibles: DBPR, Sunbiz, Realtor.com, HAR.com, SABOR y MetroTex (bloqueadas por el proxy; 23 nov). NAHREP, FastExpert y la búsqueda genérica dieron 0. Lo bloqueado solo se verifica en pantalla por OEF.
 
 ## 5. Cumplimiento
 

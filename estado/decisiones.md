@@ -150,3 +150,16 @@ Una entrada por decisión relevante, con el formato siguiente. En la revisión s
 - Disenso: inteligencia-comercial propone la pasada manual para llegar a 30; riesgo sostiene que no cambia la fuente ni el filtro y que cualificar 30 cuentas de Texas antes de saber si el mensaje funciona no aporta información. La Directora sigue a riesgo.
 - Resultado real:
 - Aprendizaje:
+
+## DEC-010 · 2026-11-23 · Prueba de fuente alternativa para Texas: inconclusa, EXP-US-02 se queda en lo que hay
+- Decidió: Directora, con inteligencia-comercial.
+- Decisión:
+  - La prueba única de DEC-009 usó HAR.com (filtro de agentes que hablan español), con SABOR y MetroTex como alternativas. Las tres están bloqueadas por el proxy del entorno (403): 0 perfiles revisados. La prueba es inconclusa, no negativa.
+  - Se aplica DEC-009 tal cual: EXP-US-02 se reduce a lo que hay (compean-group condicionada a OEF-006 D y 4 identificadas). No se repite la prueba con otra fuente.
+  - No se pide al CEO una OEF para recorrer HAR en pantalla antes de la primera lectura de EXP-US-01: compite con la demo (OEF-004) por las 6 h de esta semana y Texas no aporta información hasta saber si el mensaje funciona.
+  - Lección añadida a `contexto/linea-eeuu-inmobiliarias.md` §4: directorios de asociaciones de Texas fuera de alcance del entorno.
+- Alternativas descartadas: OEF corta de HAR en pantalla (se reconsidera tras la primera lectura de EXP-US-01, si el mensaje da señal); probar webs con /es por búsqueda genérica (DEC-008: 0 resultados).
+- Resultado esperado y plazo: Texas no suma cuentas antes del 15 dic; si EXP-US-01 da ≥2 respuestas de interés, la Directora propone una OEF de HAR de unos 30 min para EXP-US-02.
+- Disenso: riesgo sostiene que una pasada de HAR de 30 min sería delegable y no competiría con la demo; que sin Texas la línea tiene 14 cualificadas, lejos de las 60 cuentas maduras del corte; y que esperar a la lectura completa de EXP-US-01 (4 ene) deja Texas fuera del control del 18 feb. La Directora mantiene la decisión mientras OEF-006, también delegable, siga sin hacerse: otra OEF delegable pendiente no añade cuentas. Se reabre en cuanto el CEO reporte OEF-006 hecha.
+- Resultado real:
+- Aprendizaje:
