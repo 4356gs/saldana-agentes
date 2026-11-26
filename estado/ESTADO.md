@@ -42,7 +42,7 @@ Subequipos: ninguno.
 - 8 (seguimientos de noviembre y Barrancolí; track España)
 - 10 (parte fiscal del cobro en USD; contador)
 - 11 (dirección del buzón, cuando esté activa)
-- 12 (nueva; bloquea el 7 dic): nombre y teléfono de la firma, aviso legal de la web con textos de relleno, compatibilidad de la campaña con el expediente.
+- 12 (bloquea el 7 dic): teléfono de la firma (el nombre, "Gelo Saldaña", está resuelto: DEC-012), aviso legal de la web con textos de relleno, compatibilidad de la campaña con el expediente.
 
 ## Cuentas bloqueadas para contacto
 - Todas las cuentas españolas, mientras dure la pausa.
@@ -56,5 +56,6 @@ Subequipos: ninguno.
 5. Queja formal por spam o mala reputación del dominio — ninguna.
 
 ## Próxima acción
+- Decidido el 26 nov (DEC-012): se envía desde saldanadigital.com, sin landing hasta el 15 dic, y el CEO hace ~4,5 h de la demo antes del 29 nov.
 - CEO, por orden: OEF-006 (33 min, delegable, límite 2 dic), OEF-004 (demo, límite 4 dic), OEF-005 (buzón, límite 4 dic) y pregunta 12. Sin las tres últimas, los lotes aprobados no salen el 7 dic.
 - Equipo: con OEF-006, redactar y pasar por riesgo el lote 1c antes del 4 dic; borrador de compean-group si OEF-006 D la confirma. Cuando lleguen dirección, teléfono y enlace al vídeo, sustituir marcas y cargar los 13 borradores en la carpeta de borradores de `cuenta_envio`. Nada se envía del 23 al 27 nov.

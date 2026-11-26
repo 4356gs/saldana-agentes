@@ -19,8 +19,8 @@ Responde debajo de cada una.
    > 
 
 12. **Firma y dominio antes del 7 dic (nueva, de riesgo; bloquea el primer envío).**
-   - a) **Nombre y teléfono.** ¿Firmas como "Gelo Saldaña" (es tu nombre público) o con tu nombre legal? ¿Qué teléfono va en la firma? Si es dominicano (+1 809/829/849) se escribe "(WhatsApp · República Dominicana)" o se omite: llamado desde EE. UU. parece local y es internacional.
-   - b) **Aviso legal de la web.** El dominio de `cuenta_envio` publica todavía "[pendiente: NIF/NIE]" y "[pendiente: domicilio…]". Quitarlo es corregir un incumplimiento, no construir. ¿Lo corriges antes del 7 dic?
+   - a) **Teléfono** (el nombre ya está: "Gelo Saldaña", 26 nov). ¿Qué teléfono va en la firma? Si es dominicano (+1 809/829/849) se escribe "(WhatsApp · República Dominicana)" o se omite: llamado desde EE. UU. parece local y es internacional.
+   - b) **Aviso legal de la web** (se sigue enviando desde saldanadigital.com, DEC-012). El dominio de `cuenta_envio` publica todavía "[pendiente: NIF/NIE]" y "[pendiente: domicilio…]". Quitarlo es corregir un incumplimiento, no construir. ¿Lo corriges antes del 7 dic?
    - c) **Expediente.** Saldaña Digital sostiene tu expediente de residencia en Galicia. Una campaña a EE. UU. desde ese dominio, cobrada por PayPal desde República Dominicana, podría no encajar con lo presentado. Valídalo con quien lleva el expediente. El equipo no asesora en esto.
    > 
 

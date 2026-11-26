@@ -177,3 +177,16 @@ Una entrada por decisión relevante, con el formato siguiente. En la revisión s
 - Disenso: el de riesgo (DEC-008, mandar solo alexander en el lote 1b) queda resuelto por el CEO a favor de las cuatro.
 - Resultado real:
 - Aprendizaje:
+
+## DEC-012 · 2026-11-26 · Dominio de envío, landing y demo antes del 7 dic
+- Decidió: CEO (chat del 26 nov), a propuesta de la Directora.
+- Decisión:
+  - `cuenta_envio` sigue siendo direccion@saldanadigital.com. No se usa atendix.net. Es un dominio registrado el 14 oct 2026, sin historial de envío, y su web es de farmacias de República Dominicana, enlazada a Saldaña Digital. Comprobado en Hostinger y en atendix.net el 26 nov.
+  - No hay landing en showingya.com antes de la lectura del 15 dic (Acta EE. UU. §2: no se construye una landing sin una cuenta que la pida). Ese dominio no tiene correo configurado.
+  - El CEO hará al menos ~4,5 h de OEF-004 antes del 29 nov para enviar el 7 dic con demo.
+  - La firma va como "Gelo Saldaña" (pregunta 12a, parte del nombre). El teléfono sigue pendiente.
+- Alternativas descartadas: enviar desde hola@atendix.net; hacer una landing acotada ahora con APR-008; plan B sin vídeo; retrasar los lotes.
+- Resultado esperado y plazo: 13 envíos el 7–8 dic desde saldanadigital.com, con demo.
+- Disenso: ninguno.
+- Resultado real:
+- Aprendizaje:
