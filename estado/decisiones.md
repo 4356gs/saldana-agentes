@@ -163,3 +163,17 @@ Una entrada por decisión relevante, con el formato siguiente. En la revisión s
 - Disenso: riesgo sostiene que una pasada de HAR de 30 min sería delegable y no competiría con la demo; que sin Texas la línea tiene 14 cualificadas, lejos de las 60 cuentas maduras del corte; y que esperar a la lectura completa de EXP-US-01 (4 ene) deja Texas fuera del control del 18 feb. La Directora mantiene la decisión mientras OEF-006, también delegable, siga sin hacerse: otra OEF delegable pendiente no añade cuentas. Se reabre en cuanto el CEO reporte OEF-006 hecha.
 - Resultado real:
 - Aprendizaje:
+
+## DEC-011 · 2026-11-26 · CEO aprueba APR-006 y APR-007 sin cambios
+- Decidió: CEO (25 nov, en la bandeja). Registra la Directora.
+- Decisión:
+  - Lote 1 (9 cuentas, incluida invierte-en-miami-group) y lote 1b (las 4 cuentas, sin el recorte que proponía riesgo) quedan aprobados para el 7–8 dic.
+  - Las condiciones no cambian: OEF-004 y OEF-005 hechas, pregunta 12 respondida, ningún borrador cargado en Outlook con marcas sin sustituir (`DIRECCIÓN-POSTAL-OEF-005`, `TELÉFONO-PROFESIONAL`, `ENLACE-VIDEO`). Hasta entonces los borradores no se cargan en la carpeta de borradores de `cuenta_envio`, aunque el conector esté disponible.
+  - Si el 7 dic falta OEF-005 o la pregunta 12, los dos lotes se mueven juntos y se recalculan los seguimientos; no se envía una parte.
+  - Si lo único que falta es OEF-004, manda el §2.1 de los LOTE.md: ese día no se envía; `desarrollo-negocio` reescribe la frase "Monté un asistente" para el plan B sin vídeo, `riesgo` la revisa y los dos lotes salen juntos en cuanto pase.
+  - Horas: OEF-004, OEF-005 y OEF-006 suman ~10,5 h (`python3`: 9 + 1 + 0,55). Con 0 h esta semana y 6 h de tope la del 30 nov, el 7 dic con demo solo es alcanzable si el CEO hace al menos ~4,5 h antes del 29 nov; si no, se va al plan B.
+- Alternativas descartadas: cargar ya los borradores en Outlook con marcas (lo prohíbe la condición de la aprobación).
+- Resultado esperado y plazo: 13 primeros contactos `email_eeuu` el 7–8 dic; primera lectura de EXP-US-01 el 15 dic.
+- Disenso: el de riesgo (DEC-008, mandar solo alexander en el lote 1b) queda resuelto por el CEO a favor de las cuatro.
+- Resultado real:
+- Aprendizaje:

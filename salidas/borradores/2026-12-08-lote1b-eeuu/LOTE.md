@@ -1,7 +1,7 @@
 # LOTE 1b · Línea EE. UU. · EXP-US-01 (Florida)
 
-Preparado: 2026-11-21 · desarrollo-negocio · canal `email_eeuu` · vertical `inmobiliaria`. Pendiente de la revisión de `riesgo`.
-**Aprobación: APR-007** (número propuesto; lo asigna la Directora), un solo APR para el lote 1b entero: correos 1, 2 y 3 de las 4 cuentas. No entra en APR-006 y no depende de que APR-006 se apruebe tal cual, pero sí de sus mismas condiciones (§2).
+Preparado: 2026-11-21 · desarrollo-negocio · canal `email_eeuu` · vertical `inmobiliaria`. Revisado por `riesgo` (pasa con cambios, aplicados).
+**Aprobación: APR-007, APROBADO por el CEO el 2026-11-25 sin cambios (DEC-011)**, un solo APR para el lote 1b entero: correos 1, 2 y 3 de las 4 cuentas. No entra en APR-006 y no depende de que APR-006 se apruebe tal cual, pero sí de sus mismas condiciones (§2).
 
 ## 1. Qué entra y qué no
 
